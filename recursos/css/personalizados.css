@@ -1,0 +1,15 @@
+.navbar-brand img{
+    width: 10%;
+}
+.container-fluid {
+    min-height: 70px;
+}
+span.required{
+	color: #a94442;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+.select2-container--default .select2-selection--single {    
+    min-height: 34px;
+}
