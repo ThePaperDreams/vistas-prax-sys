@@ -8,11 +8,14 @@
 		<link rel="stylesheet" href="../recursos/css/personalizados.css">
 		<link rel="stylesheet" href="../recursos/css/select2.css">
 		<link rel="stylesheet" href="../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../recursos/plugins/bootstrapFileInput/css/fileinput.min.css">
 		<!-- importar el código javascript -->
 		<script src="../recursos/js/jquery.js"></script>
 		<script src="../recursos/js/bootstrap.js"></script>	
 		<script src="../recursos/js/select2.js"></script>	
 		<script src="../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+		<script src="../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -155,11 +158,11 @@
 								<div class="form-group row">
 									<div class="col-sm-6">
 										<label>Foto de Deportista</label>
-										<input type="file" class="form-control" placeholder="">
+										<input type="file" class="pretty-file-input">
 									</div>
 									<div class="col-sm-6">
-										<label>Cargar Documento</label>
-										<input type="file" class="form-control" placeholder="">
+										<label>Cargar Documento</label><br>
+										<input type="file" class="pretty-file-input">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -194,7 +197,12 @@
 				jQuery(".select-two").select2({
 					width:"100%"
 				});
+
 				jQuery(".date-picker").datepicker();
+
+				jQuery(".pretty-file-input").fileinput({
+				    language: "es",
+				});
 			});
 		</script>
 	</body>

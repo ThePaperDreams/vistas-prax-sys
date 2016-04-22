@@ -13,3 +13,9 @@ span.required{
 .select2-container--default .select2-selection--single {    
     min-height: 34px;
 }
+
+@media (min-width: 1200px){	
+	.container {
+	    width: 1024px;
+	}
+}
