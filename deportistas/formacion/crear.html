@@ -1,0 +1,234 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Plan de Trabajo-Registrar</title>
+
+		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/bootstrapFileInput/css/fileinput.min.css">
+		<!-- importar el código javascript -->
+		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="../../recursos/img/prax-sys/logo.png" alt="">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+
+			      </ul>
+			      <!-- Menú de la derecha -->
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Ver perfil</a></li>			            
+			            <li><a href="#">Cerrar sesión</a></li>
+			          </ul>
+			        </li>
+			      </ul>	    
+
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>			
+		</header>
+		<aside class="col-sm-2">
+			<div class="list-group">
+			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
+			  <a href="../../deportistas/index.html" class="list-group-item active"><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
+			  <a href="../../publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			</div>
+		</aside>
+
+		<article class="col-sm-10">
+			<!-- Migas de pan -->
+			<div class="container">				
+				
+				<ol class="breadcrumb">
+					<li><a href="../../index.html">Inicio</a></li>
+					<li><a href="../index.html">Deportistas</a></li>
+					<li><a href="index.html">Gestionar Plan de Trabajo</a></li>
+					<li>Registrar</li>
+				</ol>
+
+				<div class="col-sm-12">
+					<!-- contenido -->
+					<fieldset>
+						<legend>Registrar Plan de Trabajo</legend>						
+						<p class="text-danger">* Campos Requeridos</p>
+						<form action="">
+							<div class="col-sm-offset-1 col-sm-6">
+								
+								<div class="form-group row">
+									<div class="col-sm-4">
+										<label ><span class="text-danger">*</span> Año al que aplica</label>
+										<input type="number" class="form-control">
+									</div>
+									<div class="col-sm-8">
+										<label class="col-sm-12"><span class="text-danger"> * </span> Categoría</label>
+										<div class="col-sm-12">
+											<select name="" id="" class="form-control select-two" autofocus="true">
+												<option value="">A 1</option>
+												<option value="">A 2</option>
+												<option value="">A 3</option>
+												<option value="">A 4</option>
+												<option value="">A 5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-12">
+										<label for="">Descripción</label>
+										<textarea name="" id="" cols="30" rows="2" class="form-control">
+											
+										</textarea>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-12"><span class="text-danger">*</span> Objetivo</label>
+									<div class="col-sm-9">
+										<select name="" id="obj-select" class="form-control select-two" autofocus="true">
+											<option value="">Objetivo 1</option>
+											<option value="">Objetivo 2</option>
+											<option value="">Objetivo 3</option>
+											<option value="">Objetivo 4</option>
+											<option value="">Objetivo 5</option>
+										</select>
+									</div>
+									<div class="col-sm-3">
+										<button class="btn btn-primary btn-block" id="add-obj"><i class="fa fa-plus"></i> Añadir</button>
+									</div>
+								</div>
+								<div class="form-group row">
+									<table class="table table-striped table-hover" id="table-obj">
+										<thead>
+											<th>Objetivo</th>
+											<th>&nbsp;</th>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-4">
+										<button class="btn btn-success btn-block">
+											<i class="fa fa-floppy-o"></i>
+											Guardar
+										</button>
+									</div>
+									<div class="col-sm-4">
+										<a href="index.html" class="btn btn-default btn-block">
+											<i class="fa fa-reply"></i> 
+											Cancelar
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="list-group">
+									<a id="obj-create" href="#" class="list-group-item">Gestionar Objetivos</a>
+									<a id="obj-cat" href="#" class="list-group-item">Gestionar Categorías</a>
+								</div>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+
+			</div>
+
+		</article>
+
+		<div id="modal-create" class="modal fade">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe id="frame-manage" src="" frameborder="0" width="100%" class="iframe-modal"></iframe>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<footer>
+			
+		</footer>
+
+		<script>
+			jQuery(function(){
+				jQuery("#add-obj").click(function(){
+					var html = '<tr>' + 
+								'<td>' + jQuery("#obj-select option:selected").text() + '</td>' +
+								'<td>' +
+									'<button onclick="return deleteRow(jQuery(this));" class="btn btn-danger"><i class="fa fa-trash"></i></button>' +
+								'</td>' +
+							'</tr>';
+					jQuery("#table-obj").append(html);
+					return false;
+				});
+				jQuery(".select-two").select2({
+					width:"100%"
+				});
+
+				jQuery(".date-picker").datepicker();
+
+				jQuery(".pretty-file-input").fileinput({
+				    language: "es",
+				});
+			});
+
+			jQuery("#obj-cat, #obj-create").click(function(){
+				var ruta = "";
+				if(jQuery(this).attr("id") == "obj-create"){
+					ruta = "_obj_crear.html";
+				} else if(jQuery(this).attr("id") == "obj-cat") {
+					ruta = "_cate_crear.html";
+				}
+				jQuery("#modal-create").modal('show');
+				var frame = jQuery("#frame-manage");
+				frame.attr("src", ruta);
+			});
+
+			function deleteRow(obj) {
+				var tr = obj.closest('tr');
+				tr.find("td").slideUp(function(){
+					tr.remove();
+				});
+				return false;
+			}
+		</script>
+	</body>
+	</html>

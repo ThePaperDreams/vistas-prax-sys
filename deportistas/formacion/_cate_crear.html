@@ -1,0 +1,117 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Categorías-Registrar</title>
+
+		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/bootstrapFileInput/css/fileinput.min.css">
+		<!-- importar el código javascript -->
+		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+		<article class="col-sm-12">
+			<!-- Migas de pan -->
+			<div class="container-fluid">
+				<div class="col-sm-12">
+					<!-- contenido -->
+					<fieldset>
+						<legend>Registrar Categoría</legend>
+						<p class="text-danger">* Campos Requeridos</p>
+						<form action="">
+							<div class="col-sm-offset-2 col-sm-8">
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Nombre</label>
+										<input required type="text" class="form-control" placeholder="">
+									</div>		
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Cupo mínimo</label>
+										<input required type="number" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label>Descripción</label>
+										<textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
+									</div>
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Cupo máximo</label>
+										<input required type="number" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Edad mínima</label>
+										<input required type="number" class="form-control" placeholder="">
+									</div>		
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Edad máxima</label>
+										<input required type="number" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Entrenador</label>
+										<select required name="" id="" class="form-control select-two">
+											<option value="">Entrenador1</option>
+											<option value="">Entrenador2</option>
+											<option value="">Entrenador3</option>
+										</select>
+									</div>
+									<div class="col-sm-6">										
+										<label for="" class="">Valor mensualidad</label>
+										<input type="number" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-4">
+										<button class="btn btn-success btn-block">
+											<i class="fa fa-floppy-o"></i>
+											Guardar
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+
+			</div>
+
+		</article>
+
+		<footer>
+			
+		</footer>
+
+		<script>
+			jQuery(function(){
+				jQuery(".select-two").select2({
+					width:"100%"
+				});
+
+				jQuery(".date-picker").datepicker();
+
+				jQuery(".pretty-file-input").fileinput({
+				    language: "es",
+				});
+			});
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,252 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Torneos-Modificar</title>
+
+		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/bootstrapFileInput/css/fileinput.min.css">
+		<!-- importar el código javascript -->
+		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="../../recursos/img/prax-sys/logo.png" alt="">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+
+			      </ul>
+			      <!-- Menú de la derecha -->
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Ver perfil</a></li>			            
+			            <li><a href="#">Cerrar sesión</a></li>
+			          </ul>
+			        </li>
+			      </ul>	    
+
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>			
+		</header>
+		<aside class="col-sm-2">
+			<div class="list-group">
+			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
+			  <a href="../../deportistas/index.html" class="list-group-item active"><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
+			  <a href="../../publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			</div>
+		</aside>
+
+		<article class="col-sm-10">
+			<!-- Migas de pan -->
+			<div class="container">				
+				
+				<ol class="breadcrumb">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="../../index.html">Gestionar Deportistas</a></li>
+					<li><a href="index.html">Gestionar Torneos</a></li>
+					<li>Modificar</li>
+				</ol>
+
+				<form action="">
+				<div class="col-sm-12">
+					<!-- contenido -->
+					<fieldset>
+						<legend>Modificar Torneo</legend>						
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label for=""><span class="text-danger">*</span> Nombre</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="">Observaciones</label>
+									<textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Fecha Inicio</label>
+										<input type="text" class="form-control date-picker">
+									</div>
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Fecha Fin</label>
+										<input type="text" class="form-control date-picker">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Cupo Max.</label>
+										<input type="number" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Cupo Min.</label>
+										<input type="number" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">Cargar Tabla de Posiciones</label>
+									<input type="file" class="pretty-file-input">
+								</div>								
+							</div>
+							<div class="col-sm-6">
+								<p class="text-danger ">* Campos Requeridos</p>
+								<div class="form-group row">
+									<div class="col-sm-6">		
+										<select name="" id="" class="form-control">
+											<option value="">Equipo 1</option>
+											<option value="">Equipo 2</option>
+											<option value="">Equipo 3</option>
+										</select>
+									</div>
+									<div class="col-sm-6">
+										<button class="btn btn-primary" id="add-team"><i class="fa fa-plus"></i> Nuevo equipo</button>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for="">Categoría</label>
+										<select name="" id="" class="select-two">
+											<option value="">A1</option>
+											<option value="">A2</option>
+											<option value="">A3</option>
+											<option value="">A4</option>
+											<option value="">A5</option>
+											<option value="">A6</option>
+										</select>
+									</div>									
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for="">Deportista</label>
+										<select name="" id="" class="select-two">
+											<option value="">Deportista 1</option>
+											<option value="">Deportista 2</option>
+											<option value="">Deportista 3</option>
+										</select>
+									</div>									
+								</div>
+								<div>
+								  <!-- Nav tabs -->
+								  <ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Equipo 1</a></li>
+								    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Equipo 2</a></li>
+								    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Equipo 3</a></li>
+								  </ul>
+
+								  <!-- Tab panes -->
+								  <div class="tab-content">
+								    <div role="tabpanel" class="tab-pane active" id="home">
+								    	<table class="table table-striped table-hover">
+								    		<tr>
+								    			<th>Dorsal</th>
+								    			<th>Deportista</th>
+								    			<th>Posición</th>
+								    			<th>Opción</th>
+								    		</tr>
+								    		<tr>
+								    			<th>5</th>
+								    			<td>Jorge Quiroz</td>
+								    			<td>Def</td>
+								    			<td>
+								    				<a href="" class="btn-danger btn"><i class="fa fa-trash"></i></a>
+								    			</td>						    			
+								    		</tr>
+								    	</table>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="profile">
+								    	<table class="table table-striped table-hover">
+								    		<tr>
+								    			<th>Dorsal</th>
+								    			<th>Deportista</th>
+								    			<th>Posición</th>
+								    			<th>Opción</th>
+								    		</tr>
+								    		<tr>
+								    			<th>10</th>
+								    			<td>Messi</td>
+								    			<td>Del</td>
+								    			<td>
+								    				<a href="" class="btn-danger btn"><i class="fa fa-trash"></i></a>
+								    			</td>						    			
+								    		</tr>
+								    	</table>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+								  </div>
+
+								</div>
+							</div>
+							
+					</fieldset>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-offset-2 col-sm-4">
+						<button class="btn btn-success btn-block">
+							<i class="fa fa-floppy-o"></i>
+							Guardar
+						</button>
+					</div>
+					<div class="col-sm-4">
+						<a href="index.html" class="btn btn-default btn-block">
+							<i class="fa fa-reply"></i> 
+							Cancelar
+						</a>
+					</div>
+				</div>
+			</form>
+
+			</div>
+
+		</article>
+
+		<footer>
+			
+		</footer>
+
+		<script>
+			jQuery(function(){
+				jQuery(".select-two").select2({
+					width:"100%"
+				});
+
+				jQuery(".date-picker").datepicker();
+
+				jQuery(".pretty-file-input").fileinput({
+				    language: "es",
+				});
+			});
+		</script>
+	</body>
+	</html>

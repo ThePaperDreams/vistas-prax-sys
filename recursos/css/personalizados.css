@@ -19,3 +19,19 @@ span.required{
 	    width: 1024px;
 	}
 }
+
+.iframe-modal{
+    width: 100%;
+    min-height: 400px;
+}
+
+.profile-photo{
+    width: 100%;
+}
+
+.panel.disabled{
+    opacity: 0.4;
+}
+.separator-md{
+    padding: 10px;
+}

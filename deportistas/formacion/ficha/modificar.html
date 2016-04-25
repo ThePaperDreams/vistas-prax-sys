@@ -1,0 +1,237 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Ficha Técnica de Deportistas-Gestionar</title>
+
+		<link rel="stylesheet" href="../../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<!-- importar el código javascript -->
+		<script src="../../../recursos/js/jquery.js"></script>	
+		<script src="../../../recursos/js/bootstrap.js"></script>	
+		<script src="../../../recursos/js/select2.js"></script>
+		<script src="../../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="../../../recursos/img/prax-sys/logo.png" alt="">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+
+			      </ul>
+			      <!-- Menú de la derecha -->
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Ver perfil</a></li>			            
+			            <li><a href="#">Cerrar sesión</a></li>
+			          </ul>
+			        </li>
+			      </ul>	    
+
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>			
+		</header>
+		<aside class="col-sm-2">
+			<div class="list-group">
+			  <a href="../../../usuarios/" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
+			  <a href="../../../deportistas/" class="list-group-item active"><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="../../../pagos/" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../../control_existencias/" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
+			  <a href="../../../publicaciones/" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="../../../configuraciones/" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			</div>
+		</aside>
+
+		<article class="col-sm-10">
+			<!-- Migas de pan -->
+			<div class="container">				
+				
+				<ol class="breadcrumb">
+					<li><a href="../../../index.html">Inicio</a></li>
+					<li><a href="../../index.html">Deportistas</a></li>
+					<li><a href="../../detalle.html">Ver Deportista</a></li>
+					<li>Ver Ficha Técnica</li>
+				</ol>
+
+				<div class="col-sm-12">
+					<!-- Todo el contenido -->				
+					<div class="col-sm-6">
+						<div class="panel panel-default disabled">
+							<div class="panel-heading">
+								<h5>Datos Personales</h5>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-4">
+										<img class="profile-photo" src="../../../recursos/img/deportistas/deportista1.jpg" alt="">
+										<p class="text-center">
+											<span class="label label-success">Activo</span>
+										</p>
+									</div>
+									<div class="col-sm-8">
+										<table class="table table-hover">											
+											<tr><th>Nombres: </th> <td>Jorge Alejandro</td></tr>
+											<tr><th>Apellidos: </th> <td>Quiroz Serna</td></tr>
+											<tr><th>Edad: </th> <td>15</td></tr>
+											<tr><th>Identificación: </th> <td>1152199385</td></tr>
+										</table>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="panel panel-default disabled">
+							<div class="panel-heading">
+								<h5>Datos de Contacto</h5>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover">
+									<tr><th>Teléfono: </th><td>55555</td></tr>
+									<tr><th>Dirección: </th><td>Sur</td></tr>
+									<tr><th>Acudiente: </th><td>Alvaro de Jesús Quiroz</td></tr>
+									<tr><th>Tels Acudiente: </th><td>7777777-7777778</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5>Información General del Deportista</h5>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover">
+									<tr>
+										<th>RH: </th>
+										<td class="col-sm-3"><input type="text" class="form-control"></td>
+										<th>Categoría Actual: </th>
+										<td>
+											<select name="" id="" class="form-control select-two">
+												<option value="">A1</option>
+												<option value="">A2</option>
+												<option value="">A3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>Talla: </th>
+										<td>
+											<div class="input-group">
+											  <input type="number" class="form-control" placeholder="" aria-describedby="basic-addon2">
+											  <span class="input-group-addon" id="basic-addon2">Cm</span>
+											</div>
+										</td>
+										<th>Posición: </th>
+										<td>
+											<select name="" id="" class="form-control select-two">
+												<option value="">Defensa</option>
+												<option value="">Delantero</option>
+												<option value="">Medio</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>Peso: </th>
+										<td>
+											<div class="input-group">
+											  <input type="number" class="form-control" placeholder="" aria-describedby="basic-addon2">
+											  <span class="input-group-addon" id="basic-addon2">Kg</span>
+											</div>
+										</td>
+										<th>Pierna habíl: </th>
+										<td>
+											<select name="" id="" class="form-control select-two">
+												<option value="">Derecha</option>
+												<option value="">Izquierda</option>
+												<option value="">Ambas</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>Dorsal: </th>
+										<td>
+											<input type="number" class="form-control">
+										</td><th colspan="2"></th>
+
+									</tr>
+								</table>
+								<div class="col-sm-offset-4 col-sm-4">
+									<a href="index.html" class="btn btn-success btn-block">
+										<i class="fa fa-flppy-o"></i> Guardar
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default disabled">
+							<div class="panel-heading">
+								<h5>Estadísticas del Deportista</h5>	
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover">
+									<tr><th>Amonestaciones: </th><td>0</td><th>Expulsiones: </th><td>0</td><th>Valoración: </th><td>3.26</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default disabled">
+							<div class="panel-heading">
+								<h5>Información de Entrenamientos</h5>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover">
+									<tr><th>Faltas de asistencia: </th><td>0</td><th>Faltas Justificadas: </th><td>0</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</article>
+
+		<footer>
+			
+		</footer>
+		<script>
+			jQuery(function(){
+				jQuery(".select-two").select2({
+					width: "100%",
+				});
+				jQuery(".date-picker").datepicker();
+			});
+		</script>
+	</body>
+	</html>
