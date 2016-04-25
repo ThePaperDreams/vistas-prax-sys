@@ -1,0 +1,260 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Login</title>
+
+		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<!-- importar el código javascript -->
+		<script src="../../recursos/js/jquery.js"></script>	
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+	<div class="row">
+		<div class="col-sm-0">
+			<img src="../../recursos/img/prax-sys/logo.png" width="8%">
+	    
+	    	 <input class="col-sm-offset-8" type="text" class="form-control" placeholder="Buscar"><button type="submit" class="btn btn fa fa-search"></button>
+	    	 </div>
+	</div>    
+		<header>
+			
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    	<form class="navbar-form navbar-left" role="search">
+					        <div class="form-group">
+					        	<div class="col-sm-0">
+
+					      <ul class="nav navbar-nav">
+					      	<li><a href="#"><p class="fa fa-home"></p></a></li>
+					        <li class="active"><a href="#">¿Quiénes Somos? <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">Misión y Visión</a></li>
+					        <li><a href="#">Categorías </a></li>
+					        <li><a href="#">Contáctanos</a></li>
+					        
+					      </ul>
+					    </div>  
+					    </div>
+					  </form>  
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><p class="navbar-text">¿Ya tienes una cuenta?</p></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+							<ul id="login-dp" class="dropdown-menu">
+								<li>
+									 <div class="row">
+											<div class="col-md-12">
+												Login vía Redes Sociales
+												<div class="social-buttons">
+													<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+													<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+												</div>
+				                                ó
+												 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+														<div class="form-group">
+															 <label class="sr-only" for="exampleInputEmail2">Correo Electrónico</label>
+															 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo Electrónico" required>
+														</div>
+														<div class="form-group">
+															 <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+															 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+				                                             <div class="help-block text-right"><a href="">¿Olvidaste tu contaseña?</a></div>
+														</div>
+														<div class="form-group">
+															 <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+														</div>
+														<div class="checkbox">
+															 <label>
+															 <input type="checkbox"> ¿Mantener sesión iniciada?
+															 </label>
+														</div>
+												 </form>
+											</div>
+											<div class="bottom text-center">
+												¿Eres nuevo aquí? <a href="#"><b>Únetenos</b></a>
+											</div>
+									 </div>
+								</li>
+							</ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>			
+		</header>
+		<article> 
+			<div class="col-xs-10">
+				<div class="container">	
+					<fieldset>
+						<div class="form-group">
+							<div class="col-sm-offset-1 col-sm-11">	
+										<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+											  <!-- Indicators -->
+											  <ol class="carousel-indicators">
+											    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+											    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+											    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+											    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+											  </ol>
+
+											  <!-- Wrapper for slides -->
+											  <div class="carousel-inner">
+
+											    <div class="item active srle">
+											      <img src="https://i.ytimg.com/vi/Jkh_z6eAzGo/maxresdefault.jpg" alt="1.jpg" class="img-responsive">
+											      <div class="carousel-caption">
+											        <p> 1.jpg </p>
+											      </div>
+											    </div>
+
+											    <div class="item">
+											      <img src="https://i.ytimg.com/vi/KHa9qSvRqR0/maxresdefault.jpg" alt="2.jpg" class="img-responsive">
+											      <div class="carousel-caption">
+											        <p> 2.jpg </p>
+											      </div>
+											    </div>
+
+											    <div class="item">
+											      <img src="http://g.cdn.ecn.cl/futbol-internacional/files/2016/03/futbol-semana2-5.jpg" alt="3.jpg" class="img-responsive">
+											      <div class="carousel-caption">
+											        <p> 3.jpg </p>
+											      </div>
+											    </div>
+
+											    <div class="item">
+											      <img src="http://udescargas.org/wp-content/uploads/2014/11/Mejores-Juegos-de-F%c3%batbol.jpg" alt="4.jpg" class="img-responsive">
+											      <div class="carousel-caption">
+											        <p> 4.jpg </p>
+											      </div>
+											    </div>
+
+											  </div>
+
+											  <!-- Controls -->
+											  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+											    <span class="glyphicon glyphicon-chevron-left"></span>
+											  </a>
+											  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+											    <span class="glyphicon glyphicon-chevron-right"></span>
+											</a>
+									</div>
+								</div>
+							</div>		
+						</fieldset>				
+					</div>
+				</div>
+		</article>
+
+		<footer>
+			<div class="col-sm-12">
+				<fieldset>
+					<div class="container">				
+								<form action="">
+									<div class="form-group row">
+										<div class="col-sm-offset-0 col-sm-4">
+  										<label for="">Publicaciones</label>
+  										<textarea class="form-control" rows="7" id="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</textarea>
+									</div>
+									<div class="col-sm-4">
+  										<label for="">Eventos</label>
+  										<textarea class="form-control" rows="7" id="">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</textarea>
+									</div>
+									<div class="col-sm-4">
+  										<label for="">Publicidad</label>
+  										<textarea class="form-control" rows="7" id="">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</textarea>
+									</div>
+								</div>
+							</form>	
+						</div>				
+					</fieldset>
+				</div>
+		</footer>
+		<script>
+			jQuery(function(){
+					jQuery(".select-two").select2({
+						width: "100%",
+					});
+					jQuery(".date-picker").datepicker();
+			});
+		</script>
+		<script>
+			;(function(window, $, undefined) {
+
+				var conf = {
+					center: true,
+					backgroundControl: false
+				};
+
+				var cache = {
+					$carouselContainer: $('.thumbnails-carousel').parent(),
+					$thumbnailsLi: $('.thumbnails-carousel li'),
+					$controls: $('.thumbnails-carousel').parent().find('.carousel-control')
+				};
+
+				function init() {
+					cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
+					cache.$thumbnailsLi.first().addClass('active-thumbnail');
+
+					if(!conf.backgroundControl) {
+						cache.$carouselContainer.find('.carousel-control').addClass('controls-background-reset');
+					}
+					else {
+						cache.$controls.height(cache.$carouselContainer.find('.carousel-inner').height());
+					}
+
+					if(conf.center) {
+						cache.$thumbnailsLi.wrapAll("<div class='center clearfix'></div>");
+					}
+				}
+
+				function refreshOpacities(domEl) {
+					cache.$thumbnailsLi.removeClass('active-thumbnail');
+					cache.$thumbnailsLi.eq($(domEl).index()).addClass('active-thumbnail');
+				}	
+
+				function bindUiActions() {
+					cache.$carouselContainer.on('slide.bs.carousel', function(e) {
+			  			refreshOpacities(e.relatedTarget);
+					});
+
+					cache.$thumbnailsLi.click(function(){
+						cache.$carouselContainer.carousel($(this).index());
+					});
+				}
+
+				$.fn.thumbnailsCarousel = function(options) {
+					conf = $.extend(conf, options);
+
+					init();
+					bindUiActions();
+
+					return this;
+				}
+
+			})(window, jQuery);
+
+			$('.thumbnails-carousel').thumbnailsCarousel();
+		</script>
+	</body>
+	</html>

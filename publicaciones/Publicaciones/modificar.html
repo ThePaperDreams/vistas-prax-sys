@@ -1,0 +1,158 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Prax-sys Deportistas-Registrar</title>
+
+		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
+		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
+		<link rel="stylesheet" href="../../recursos/css/select2.css">
+		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/toolbar/jquery.toolbar.css">
+		<!-- importar el código javascript -->
+		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="../../recursos/img/prax-sys/logo.png" alt="">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+
+			      </ul>
+			      <!-- Menú de la derecha -->
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Ver perfil</a></li>			            
+			            <li><a href="#">Cerrar sesión</a></li>
+			          </ul>
+			        </li>
+			      </ul>	    
+
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>			
+		</header>
+		<aside class="col-sm-2">
+			<div class="list-group">
+			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
+			  <a href="../../deportistas/index.html" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
+			  <a href="../../publicaciones/index.html" class="list-group-item active"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			</div>
+		</aside>
+
+		<article class="col-sm-10">
+			<!-- Migas de pan -->
+			<div class="container">				
+				
+				<ol class="breadcrumb">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="index.html">Gestionar Publicaciones</a></li>
+					<li><a href="detalle_publicacion.html">Detalle Publicación</a></li>
+					<li>Registrar Publicaciones</li>
+				</ol>
+
+				<div class="col-sm-12">
+					<!-- contenido -->
+					<fieldset>
+						<legend>Modificar Publicaciones</legend>						
+						<p class="text-danger">* Campos Requeridos</p>
+						<form action="">
+							<div class="col-sm-offset-2 col-sm-8">
+									
+								<label><span class="text-danger">*</span> Título de Publicación</label>
+								<input type="text" class="form-control" placeholder="Inscripciones Abiertas">									
+									
+							</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-8">
+  										<label for="">Descripción de la Publicación</label>
+  										<textarea class="form-control" rows="5" id="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+									</div>
+								</div>
+								<div class="form-group row">	
+									<div class="col-sm-offset-2 col-sm-8">
+										<div class="radio-inline">
+											<label><input type="radio" value="">Noticia</label>
+											</div>
+											<div class="radio-inline">
+											<label><input type="radio" value="">Circular</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-8">
+										<label>Fecha de Publicación</label>
+										<input type="text" class="form-control date-picker" placeholder="00-00-0000">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-8">
+										<label>Fecha de Cierre</label>
+										<input type="text" class="form-control date-picker" placeholder="00-00-0000">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-4">
+										<button class="btn btn-success btn-block">
+											<i class="fa fa-floppy-o"></i>
+											Guardar
+										</button>
+									</div>
+									<div class="col-sm-4">
+										<a href="index.html" class="btn btn-default btn-block">
+											<i class="fa fa-reply"></i> 
+											Cancelar
+										</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+
+			</div>
+
+		</article>
+
+		<footer>
+			
+		</footer>
+
+		<script>
+			jQuery(function(){
+				jQuery(".select-two").select2({
+					width:"100%"
+				});
+				jQuery(".date-picker").datepicker();
+			});
+		</script>
+	</body>
+	</html>
