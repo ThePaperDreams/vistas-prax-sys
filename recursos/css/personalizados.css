@@ -1,8 +1,14 @@
 .navbar-brand img{
-    width: 10%;
+    width: 4.3%;
+    position: absolute;
+    left: 0.6%;
+    top: 4px;
+}
+.navbar-brand{
+    padding-left: 70px;
 }
 .container-fluid {
-    min-height: 70px;
+    /*min-height: 70px;*/
 }
 span.required{
 	color: #a94442;
@@ -34,4 +40,163 @@ span.required{
 }
 .separator-md{
     padding: 10px;
+}
+
+
+.dash-panel{
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+    color: white;
+    text-align: center;
+}
+.dash-panel .dash-icon{
+    font-size: 60px;
+}
+.dash-panel.panel-success{
+    background-color: rgba(92, 184, 92, 0.74);    
+    border: 1px solid #5CB85C;
+}
+.dash-panel.panel-info{
+    background-color: rgba(91,192,222,0.74);
+    border: 1px solid #5BC0DE;
+}
+.dash-panel.panel-danger{
+    background-color: rgba(217,83,79,0.74);
+    border: 1px solid #D9534F;
+}
+.dash-panel.panel-warning{
+    background-color: rgba(240,173,78,0.74);
+    border: 1px solid #F0AD4E;
+}
+.dash-panel.panel-primary{
+    background-color: rgba(51, 122, 183, 0.77);
+    border: 1px solid #337AB7;
+}
+.dash-panel a{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.dash-panel .white{
+    background-color: white;
+}
+.dash-panel .panel-body.white a{
+    color: black !important;   
+    text-shadow: none;
+    text-align: left;
+}
+aside .list-group{
+    padding-top: 30px;
+    left: 0px;
+    position: fixed;
+    top: 50.2px;
+    min-width: 22%;
+    height: 100%;
+    border-right: 1px solid #928F8F;
+    background-color: #D2CECE;
+    z-index: 901;
+}
+aside .list-group .list-group-item{
+    border-right: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid #928F8F;
+    border-top: 1px solid #928F8F;
+}
+
+aside .list-group a ul{
+    margin-left: 0px;
+    padding-left: 40px;
+}
+aside .list-group a:hover ul{}
+
+aside .list-group a:first-child, aside .list-group a:last-child{
+    border-radius: none;
+}
+
+aside .list-group a:first-child{
+    border-top: 0px;
+}
+
+article .container-fluid{
+    margin-left: 80px;
+    padding-top: 80px;
+}
+.navbar.navbar-default.navbar-fixed-top{
+    z-index: 900;
+}
+
+aside .list-group .list-group-item ul li{
+    list-style-type: none;
+    padding: 5px;
+    height: 100%;
+    border-bottom: 1px solid #ddd;
+}
+aside .list-group .list-group-item.active{
+    background-color: #928F8F;
+}
+
+aside .list-group .list-group-item ul li a{
+    color: black;
+    text-decoration: none;
+}
+aside .list-group .list-group-item.active li a{
+    color: white;
+}
+
+aside .list-group .list-group-item:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    border: 0px solid transparent;
+    border-left: 5px solid #585858;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+aside .list-group .list-group-item.open:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border: 0px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #FFF;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+aside .list-groupa{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c3c3c3+0,d0d0d0+17,dcdcdc+33,dcdcdc+67,e6e6e6+83,f8f8f8+100 */
+    background: #c3c3c3; /* Old browsers */
+    background: -moz-linear-gradient(left,  #c3c3c3 0%, #d0d0d0 17%, #dcdcdc 33%, #dcdcdc 67%, #e6e6e6 83%, #f8f8f8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #c3c3c3 0%,#d0d0d0 17%,#dcdcdc 33%,#dcdcdc 67%,#e6e6e6 83%,#f8f8f8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #c3c3c3 0%,#d0d0d0 17%,#dcdcdc 33%,#dcdcdc 67%,#e6e6e6 83%,#f8f8f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#f8f8f8',GradientType=1 ); /* IE6-9 */
+}
+
+aside .list-group .list-group-item ul li a{
+    
+}
+.sub-menu{
+
+}
+
+body{
+    background-image: url(../img/prax-sys/bg-pattern.jpg);
+    background-size: 130px;
+}
+.navbar.navbar-default.navbar-fixed-top{
+    background-color: red;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8c88f+0,bf9742+44,937233+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9daa5+0,dcb768+44,d3a145+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3a145+0,dcb768+56,e9daa5+100 */
+}
+.navbar-brand, .navbar.navbar-default.navbar-fixed-top .dropdown-toggle{
+    color: white !important;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
