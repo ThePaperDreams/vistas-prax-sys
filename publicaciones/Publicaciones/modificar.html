@@ -57,20 +57,45 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2 col-sm- 2">
 			<div class="list-group">
-			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="../../deportistas/index.html" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
-			  <a href="../../publicaciones/index.html" class="list-group-item active"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="../../ex.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios
+			  <ul>
+			  		<li><a href="../../usuarios/index.html">Usuarios</a></li>
+			  		<li><a href="../../usuarios/roles/index.html">Roles</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
+			  	<ul>
+			  		<li><a href="../../deportistas/index.html">Deportistas</a></li>
+			  		<li><a href="../../deportistas/categorias/index.html">Categorías</a></li>			
+			  		<li><a href="../../deportistas/formacion/index.html">Formación</a></li>			
+			  		<li><a href="../../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
+			  		<li><a href="../../deportistas/torneos/index.html">Torneos</a></li>			
+		  		</ul>
+			  </a>
+			  <a href="../../html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../tencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias
+			  <ul>
+			  		<li><a href="../../Articulos/index - articulos.html">Artículos</a></li>
+			  		<li><a href="../../Categoria/index-categoria.html">Categoría</a></li>
+			  		<li><a href="../../index - prestamo.html">Préstamo</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../s/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="index.html">Publicaciones</a></li>
+			  		<li><a href="../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </a>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
-		<article class="col-sm-10">
+		<article class="col-lg-10 col-md-10 col-sm-10">
 			<!-- Migas de pan -->
-			<div class="container">				
+			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
 					<li><a href="#">Inicio</a></li>
@@ -79,26 +104,26 @@
 					<li>Registrar Publicaciones</li>
 				</ol>
 
-				<div class="col-sm-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<!-- contenido -->
 					<fieldset>
 						<legend>Modificar Publicaciones</legend>						
 						<p class="text-danger">* Campos Requeridos</p>
 						<form action="">
-							<div class="col-sm-offset-2 col-sm-8">
+							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
 									
 								<label><span class="text-danger">*</span> Título de Publicación</label>
 								<input type="text" class="form-control" placeholder="Inscripciones Abiertas">									
 									
 							</div>
 								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-8">
+									<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
   										<label for="">Descripción de la Publicación</label>
   										<textarea class="form-control" rows="5" id="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 									</div>
 								</div>
 								<div class="form-group row">	
-									<div class="col-sm-offset-2 col-sm-8">
+									<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
 										<div class="radio-inline">
 											<label><input type="radio" value="">Noticia</label>
 											</div>
@@ -108,25 +133,25 @@
 									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-8">
+									<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
 										<label>Fecha de Publicación</label>
 										<input type="text" class="form-control date-picker" placeholder="00-00-0000">
 									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-8">
+									<div class="col-lg- col-md- col-sm- offset-2 col-lg- col-md- col-sm- 8">
 										<label>Fecha de Cierre</label>
 										<input type="text" class="form-control date-picker" placeholder="00-00-0000">
 									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-4">
+									<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-4 col-md-4 col-sm-4">
 										<button class="btn btn-success btn-block">
 											<i class="fa fa-floppy-o"></i>
 											Guardar
 										</button>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-lg-4 col-md-4 col-sm-4">
 										<a href="index.html" class="btn btn-default btn-block">
 											<i class="fa fa-reply"></i> 
 											Cancelar
