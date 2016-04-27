@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
-		<title>Prax-sys Categorías-Registrar</title>
+		<title>Prax-sys Acudientes-Registrar</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
 		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
@@ -65,18 +65,19 @@
 			<div class="list-group">
 			  <div class="list-group-item"><i class="fa fa-user"></i> Usuarios
 				  <ul>
-				  		<li><a href="../index.html">Gestionar Usuarios</a></li>
-				  		<li><a href="../roles/index.html">Gestionar Roles</a></li>
+				  		<li><a href="../../usuarios/index.html">Gestionar Usuarios</a></li>
+				  		<li><a href="../../usuarios/roles/index.html">Gestionar Roles</a></li>
 				  </ul>
 			  </div>
 
   			  <div class="list-group-item sub-menu active"><i class="fa fa-futbol-o"></i> Deportistas 
 				<ul>
-					<li><a href="../index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
-					<li><a href="../categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
-					<li><a href="../prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
-					<li><a href="../formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
-					<li><a href="../torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+					<li><a href="index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
 				</ul>
 			  </div>
 
@@ -100,69 +101,86 @@
 			</div>
 		</aside>
 
+
 		<article class="col-sm-10">
 			<!-- Migas de pan -->
-			<div class="container-fluid">				
+			<div class="container-fluid">
 				
 				<ol class="breadcrumb">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="../../index.html">Gestionar Deportistas</a></li>
-					<li><a href="index.html">Gestionar Categorías</a></li>
+					<li><a href="../../index.html">Inicio</a></li>
+					<li><a href="index.html">Gestionar Acudientes</a></li>
 					<li>Registrar</li>
 				</ol>
 
 				<div class="col-sm-12">
 					<!-- contenido -->
 					<fieldset>
-						<legend>Registrar Categoría</legend>
+						<legend>Registrar Acudiente</legend>						
 						<p class="text-danger">* Campos Requeridos</p>
 						<form action="">
 							<div class="col-sm-offset-2 col-sm-8">
+								
 								<div class="form-group row">
 									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Nombre</label>
-										<input required type="text" class="form-control" placeholder="">
-									</div>		
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Cupo mínimo</label>
-										<input required type="number" class="form-control" placeholder="">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="col-sm-6">
-										<label>Descripción</label>
-										<textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
-									</div>
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Cupo máximo</label>
-										<input required type="number" class="form-control" placeholder="">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Edad mínima</label>
-										<input required type="number" class="form-control" placeholder="">
-									</div>		
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Edad máxima</label>
-										<input required type="number" class="form-control" placeholder="">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Entrenador</label>
-										<select required name="" id="" class="form-control select-two">
-											<option value="">Entrenador1</option>
-											<option value="">Entrenador2</option>
-											<option value="">Entrenador3</option>
+										<label ><span class="text-danger">*</span> Tipo de Identificación</label>
+										<select name="" id="" class="form-control " autofocus="true">
+											<option value="">Seleccione Tipo de Documento</option>
+											<option value="">Cédula de Ciudadanía</option>
+											<option value="">Tarjeta de Identidad</option>
+											<option value="">Registro Civil</option>
 										</select>
 									</div>
-									<div class="col-sm-6">										
-										<label for="" class="">Valor mensualidad</label>
-										<input type="number" class="form-control">
+									<div class="col-sm-6">
+										<label><span class="text-danger">*</span> Identificación</label>
+										<input type="text" class="form-control" placeholder="">									
 									</div>
 								</div>
-
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label for=""><span class="text-danger">*</span> Primer Nombre</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-sm-6">
+										<label>Segundo Nombre</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label><span class="text-danger">*</span> Primer Apellido</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-sm-6">
+										<label>Segundo Apellido</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label><span class="text-danger">*</span> Teléfono</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-sm-6">
+										<label>Teléfono</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6">
+										<label><span class="text-danger">*</span> E-mail</label>
+										<input type="email" class="form-control" placeholder="">
+									</div>
+									<div class="col-sm-6">
+										<label>Dirección</label>	
+										<input type="text" class="form-control" placeholder="">	
+									</div>
+								</div>								
+								<div class="form-group row">
+									<div class="col-sm-12">
+										<label>Cargar Documento</label><br>
+										<input type="file" class="pretty-file-input">
+									</div>
+								</div>
 								<div class="form-group row">
 									<div class="col-sm-offset-2 col-sm-4">
 										<button class="btn btn-success btn-block">
@@ -189,18 +207,12 @@
 		<footer>
 			
 		</footer>
-
 		<script>
 			jQuery(function(){
 				jQuery(".select-two").select2({
 					width:"100%"
 				});
-
 				jQuery(".date-picker").datepicker();
-
-				jQuery(".pretty-file-input").fileinput({
-				    language: "es",
-				});
 			});
 		</script>
 	</body>
