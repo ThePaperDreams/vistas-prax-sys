@@ -36,6 +36,7 @@
 						</button>
 						<a class="navbar-brand" href="#">
 							<img src="../../recursos/img/prax-sys/logo.png" alt="">
+							Club Deportivo Praxis
 						</a>
 					</div>
 
@@ -61,12 +62,12 @@
 		</header>
 		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <div class="list-group-item active"><i class="fa fa-user"></i> Usuarios
-				  <ul>
-				  		<li><a href="../index.html">Gestionar Usuarios</a></li>
-				  		<li><a href="index.html">Gestionar Roles</a></li>
-				  </ul>
-			  </div>
+				<div class="list-group-item active"><i class="fa fa-user"></i> Usuarios
+					<ul>
+						<li><a href="../index.html"><i class="fa fa-user"></i> Gestionar Usuarios</a></li>
+						<li><a href="index.html"><i class="fa fa-users"></i> Gestionar Roles</a></li>
+					</ul>
+				</div>
 
   			  <div class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas 
 				<ul>
@@ -78,24 +79,23 @@
 					<li><a href="../../deportistas/torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
 				</ul>
 			  </div>
+				<a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
 
-			  <a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-
-			  <div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
-				  <ul>
-				  		<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
-				  		<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
-				  		<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
-				  </ul>
-			  </div>
-			  <div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
-			  <ul>
-			  		<li><a href="../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
-			  		<li><a href="../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
-			  		<li><a href="../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
-			  </ul>
-			  </div>
-			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+				<div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+					<ul>
+						<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+						<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+						<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+					</ul>
+				</div>
+				<div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+					<ul>
+						<li><a href="../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+						<li><a href="../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+						<li><a href="../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+					</ul>
+				</div>
+				<a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
@@ -104,7 +104,7 @@
 			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
-					<li><a href="#">Inicio</a></li>
+					<li><a href="../../index.html">Inicio</a></li>
 					<li><a href="index.html">Gestionar Rol</a></li>
 					<li>Detalles</li>
 				</ol>
@@ -133,7 +133,7 @@
 								<div class="col-lg-6 col-md-6 col-sm-6">
 									<label for="">Módulo</label>
 									<select name="" id="" class="form-control select-two">
-									<option value="">Deportistas</option>
+										<option value="">Deportistas</option>
 										<option value="">Usuarios</option>
 									</select>
 								</div>
@@ -152,13 +152,17 @@
 									</div>
 								</div>		
 							</div>
-							<div class="form-group">
-								<a href="index.html" class="btn btn-default">
-									<i class="fa fa-reply"></i> Volver
-								</a>
-								<a href="modificar.html" class="btn btn-success">
-									<i class="fa fa-refresh"></i> Modificar
-								</a>
+							<div class="form-group row">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+									<a href="index.html" class="btn btn-default">
+										<i class="fa fa-reply"></i> Volver
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+									<a href="modificar.html" class="btn btn-success">
+										<i class="fa fa-refresh"></i> Modificar
+									</a>
+								</div>
 							</div>
 						</div>
 					</fieldset>
