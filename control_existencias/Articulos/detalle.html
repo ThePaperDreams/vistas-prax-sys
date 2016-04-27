@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
-		<title>Prax-sys Existencias-Registrar</title>
+		<title>Prax-sys Control Existencia</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
 		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../../recursos/css/select2.css">
 		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
 		<!-- importar el código javascript -->
-		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/jquery.js"></script>	
 		<script src="../../recursos/js/bootstrap.js"></script>	
 		<script src="../../recursos/js/select2.js"></script>	
 		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
@@ -57,107 +57,115 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="../../deportistas/index.html" class="list-group-item "><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../control_existencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias</a>
-			  <a href="../../publicaciones/index.html" class="list-group-item "><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="../../ex.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios
+			  <ul>
+			  		<li><a href="../../usuarios/index.html">Usuarios</a></li>
+			  		<li><a href="../../usuarios/roles/index.html">Roles</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
+			  	<ul>
+			  		<li><a href="../../deportistas/index.html">Deportistas</a></li>
+			  		<li><a href="../../deportistas/categorias/index.html">Categorías</a></li>			
+			  		<li><a href="../../deportistas/formacion/index.html">Formación</a></li>			
+			  		<li><a href="../../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
+		  		</ul>
+			  </a>
+			  <a href="../../html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../tencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias
+			  <ul>
+			  		<li><a href="../Articulos/index - articulos.html">Artículos</a></li>
+			  		<li><a href="../Categoria/index-categoria.html">Categoría</a></li>
+			  		<li><a href="index - prestamo.html">Préstamo</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../s/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </a>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
-
-		<article class="col-sm-10">
+		<article class="col-lg-10 col-md-10 col-sm-10">
 			<!-- Migas de pan -->
 			<div class="container-fluid">				
+				
 				<ol class="breadcrumb">
 					<li><a href="#">Inicio</a></li>
-					<li><a href="index-articulos.html">Control de Existencias</a></li>
-					<li>Registrar Categoria de Articulos</li>
+					<li><a href="index-articulos.html">Gestionar Artículos</a></li>
+					<li>Detalles</li>
 				</ol>
-
-				<div class="col-sm-12">
-					<!-- contenido -->
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<fieldset>
-						<legend>Registrar Categoria de Articulos</legend>						
-						<p class="text-danger">* Campos Requeridos</p>
-						<form action="">
-							<div class="col-sm-offset-2 col-sm-8">
-								
+						<legend>Detalles Artículos</legend>
+						<div class="col-sm-offset-2 col-sm-8">							
+							<table class="table table-hover table-striped">
+								<tbody>
+									<tr>
+										<th>Nombre Del Artículo:</th>
+										<td>Balón</td>
+									</tr>
+									<tr>
+										<th>Categoría:</th>
+										<td>Implementos Deportivos</td>
+									</tr>
+									<tr>
+										<th>Unidades Totales:</th>
+										<td>100</td>
+									</tr>
+									<tr>
+										<th>Unidades en Préstamo:</th>
+										<td>80</td>
+									</tr>
+									<tr>
+										<th>Unidades Disponibles:</th>
+										<td>20</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="form-group">
+										<label for=""><span class="text-danger">*</span> Descripción</label>
+										<textarea type="textarea" class="form-control" placeholder="Agrege una Breve Descripción"></textarea>
+									</div>
+							<div class="form-group row">
 								<div class="form-group row">
-									<div class="col-sm-6">
-									</div>
-
-								</div>
-								<div class="form-group row">
-
-									<div class="col-sm-12">
-										<label for=""><span class="text-danger">*</span> Nombre del Articulo</label>
-										<input type="text" class="form-control" placeholder="Ingrerse Nombre del Articulo">
-									</div>
-									<div class="col-sm-6">
-										<label ><span class="text-danger"></span> Categoria</label>
-										<select name="" id="" class="form-control " autofocus="true">
-											<option value="">Seleccione La Categoria</option>
-											<option value="">""</option>
-											<option value="">""</option>
-											<option value="">""</option>
-										</select>
-									</div>
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger"></span> Agregar Categoria</label>
-										<button class="btn btn-default btn-block">
-											<i class="fa fa-plus-circle"></i>
-											Agregar
-										</button>
-									</div>
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger">*</span> Unidades Totales</label>
-										<input type="number" class="form-control" placeholder="">
-									</div>
-									<div class="col-sm-6">
-										<label for=""><span class="text-danger"></span> Unidades Disponibles</label>
-										<input type="number" class="form-control" placeholder=""disabled=true>
-									</div>
-									<div class="col-sm-12">
-										<label for=""><span class="text-danger"></span> Descripcion</label>
-										<textarea type="textarea" class="form-control" placeholder="Agrege una Breve Descripcion"></textarea>
-									</div>
-									<div class="col-sm-6">	
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-4">
+									<div class="col-lg-4 col-md-4 col-sm-4">
 										<button class="btn btn-success btn-block">
 											<i class="fa fa-floppy-o"></i>
 											Guardar
 										</button>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<a href="index.html" class="btn btn-default btn-block">
+											<i class="fa fa-refresh"></i> 
+											Modificar
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
 										<a href="index.html" class="btn btn-default btn-block">
 											<i class="fa fa-reply"></i> 
 											Cancelar
 										</a>
 									</div>
 								</div>
+								</div>
 							</div>
-						</form>
+						</div>
 					</fieldset>
 				</div>
-
 			</div>
-
 		</article>
-
 		<footer>
-			
 		</footer>
-
 		<script>
 			jQuery(function(){
 				jQuery(".select-two").select2({
-					width:"100%"
+					width: "100%",
 				});
 				jQuery(".date-picker").datepicker();
 			});

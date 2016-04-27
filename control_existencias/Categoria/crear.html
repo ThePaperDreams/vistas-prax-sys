@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
-		<title>Prax-sys Existencias-Devolucion</title>
+		<title>Prax-sys Existencias-Registrar</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
 		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
@@ -9,10 +9,10 @@
 		<link rel="stylesheet" href="../../recursos/css/select2.css">
 		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
 		<!-- importar el código javascript -->
-		<script src="../../jquery.js"></script>
-		<script src="../../bootstrap.js"></script>	
-		<script src="../../select2.js"></script>	
-		<script src="../../gins/jquery-ui/jquery-ui.js"></script>
+		<script src="../../recursos/js/jquery.js"></script>
+		<script src="../../recursos/js/bootstrap.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,8 @@
 			        <span class="icon-bar"></span>
 			      </button>
 			      <a class="navbar-brand" href="#">
-			      	<img src="../..//prax-sys/logo.png" alt="">
+			      	<img src="../../recursos/img/prax-sys/logo.png" alt="">
+			      	Club Deportivo Praxis
 			      </a>
 			    </div>
 
@@ -51,89 +52,73 @@
 			          </ul>
 			        </li>
 			      </ul>	    
-
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
 		<aside class="col-sm-2">
 			<div class="list-group">
-			  <a href="../../ex.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="../../index.html" class="list-group-item "><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="../../html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../tencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias</a>
-			  <a href="../../s/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <a href="../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
+			  <a href="../../deportistas/index.html" class="list-group-item "><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../control_existencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias</a>
+			  <a href="../../publicaciones/index.html" class="list-group-item "><i class="fa fa-newspaper-o"></i> Publicaciones</a>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
-
-		<article class="col-sm-10">
+		<article class="col-lg-10  col-md-10  col-sm-10">
 			<!-- Migas de pan -->
-			<div class="container-fluid">								
+			<div class="container-fluid">				
 				<ol class="breadcrumb">
 					<li><a href="#">Inicio</a></li>
-					<li><a href="../../index.html">Control de Existencias</a></li>
-					<li>Registrar Devolucion</li>
+					<li><a href="index-categoria.html">Control de Existencias</a></li>
+					<li>Registrar Categoria de Articulos</li>
 				</ol>
-
-				<div class="col-sm-12">
+				<div class="col-lg-12  col-md-12  col-sm-12">
 					<!-- contenido -->
 					<fieldset>
-						<legend>Registrar Devolucion</legend>						
+						<legend>Registrar Categoria de Articulos</legend>						
 						<p class="text-danger">* Campos Requeridos</p>
 						<form action="">
-							<div class="col-sm-offset-2 col-sm-8">
+							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8  col-md-8  col-sm-8">
 								
 								<div class="form-group row">
-									<div class="col-sm-6">
+									<div class="col-lg-6  col-md-6  col-sm-6">
 									</div>
-									
 								</div>
 								<div class="form-group row">
-
-									<div class="col-sm-12">
-										<label for=""><span class="text-danger">*</span> Prestado a</label>
-										<input type="text" class="form-control" placeholder="Juan Perez"disabled="true">
+									<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6  col-md-6  col-sm-6">
+										<label for=""><span class="text-danger">*</span> Nombre de la Categoria</label>
+										<input type="text" class="form-control" placeholder="Ingrese Nombre de la Categoria">
 									</div>
-									
-									<div class="col-sm-12">
-										<label for="">Unidades Entregadas<span class="text-danger"></span></label>
-										<input type="number" class="form-control" placeholder="Agregar Categoria">
-									</div>
-									<div class="col-sm-12">
-										<label for=""><span class="text-danger"></span> Observaiones</label>
+									<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6  col-md-6  col-sm-6">
+										<label>Descripcion de la Categoria</label>
+										
 										<textarea type="textarea" class="form-control" placeholder="Agrege una Breve Descripcion"></textarea>
 									</div>
-									<div class="col-sm-6">	
-									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-offset-3 col-sm-3">
+									<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-4  col-md-4  col-sm-4">
 										<button class="btn btn-success btn-block">
 											<i class="fa fa-floppy-o"></i>
 											Guardar
 										</button>
 									</div>
-									<div class=" col-sm-3">
-										<button class="btn btn-danger btn-block">
-											<i class="fa fa-times-circle"></i>
-											Eliminar
-										</button>
+									<div class="col-lg-4  col-md-4  col-sm-4">
+										<a href="index.html" class="btn btn-default btn-block">
+											<i class="fa fa-reply"></i> 
+											Cancelar
+										</a>
 									</div>
 								</div>
 							</div>
 						</form>
 					</fieldset>
 				</div>
-
 			</div>
-
 		</article>
-
 		<footer>
-			
 		</footer>
-
 		<script>
 			jQuery(function(){
 				jQuery(".select-two").select2({
