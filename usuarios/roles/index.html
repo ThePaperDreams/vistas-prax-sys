@@ -36,6 +36,7 @@
 						</button>
 						<a class="navbar-brand" href="#">
 							<img src="../../recursos/img/prax-sys/logo.png" alt="">
+							Club Deportivo Praxis
 						</a>
 					</div>
 
@@ -63,8 +64,8 @@
 			<div class="list-group">
 			  <div class="list-group-item active"><i class="fa fa-user"></i> Usuarios
 				  <ul>
-				  		<li><a href="index.html">Gestionar Usuarios</a></li>
-				  		<li><a href="roles/index.html">Gestionar Roles</a></li>
+				  		<li><a href="../index.html"><i class="fa fa-user"></i> Gestionar Usuarios</a></li>
+				  		<li><a href="index.html"><i class="fa fa-users"></i> Gestionar Roles</a></li>
 				  </ul>
 			  </div>
 
@@ -119,27 +120,30 @@
 						</div>
 						<div class="panel panel-default">							
 							<div class="panel-body">
-								<form class="form-inline" action="">
-									<div class="form-group">
+								<form class="form-filtro" action="">
+									<div class="form-group col-lg-3">
 										<input class="form-control" type="text" placeholder="Nombre">
 									</div>
-									<div class="form-group">
+									<div class="form-group col-lg-3">
 										<input class="form-control" type="text" placeholder="Descripción">
 									</div>
-									<div class="form-group">
+
+									<div class="form-group col-lg-3">
 										<select name="" id="" class="form-control select-two">
 											<option value="">Seleccione Estado</option>
 											<option value="">Habilitado</option>
 											<option value="">Inhabilitado</option>
 										</select>
 									</div>
-									<div class="form-group">
-										<button class="btn btn-default">
+									<div class="form-group col-lg-3">
+										<button class="btn btn-default btn-block">
 											<i class="fa fa-filter"></i>
 											Filtrar
 										</button>
 									</div>
+
 							</form>
+
 						</div>
 					</div>
 				</div>
@@ -221,12 +225,12 @@
 					</tbody>
 					<tfoot>
 						<tr>
-							<td colspan="6">										
+							<td colspan="7" class="text-right">										
 								<nav>
 									<ul class="pagination">
 										<li><a href="#"><span aria-hidden="true">&laquo;</span></a></li>
 
-										<li><a href="#">1</a></li>
+										<li class="active"><a href="#">1</a></li>
 										<li><a href="#">2</a></li>
 										<li><a href="#">3</a></li>
 										<li><a href="#">4</a></li>
