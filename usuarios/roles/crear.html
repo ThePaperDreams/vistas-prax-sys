@@ -57,18 +57,43 @@
 				</div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-				<a href="../usuarios/index.html" class="list-group-item active"><i class="fa fa-user"></i> Usuarios</a>
-				<a href="../deportistas/index.html" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
-				<a href="../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-				<a href="../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
-				<a href="../publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
-				<a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			  <a href="../index.html" class="list-group-item active"><i class="fa fa-user"></i> Usuarios
+			  <ul>
+			  		<li><a href="../index.html">Usuarios</a></li>
+			  		<li><a href="index.html">Roles</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../deportistas/index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
+			  	<ul>
+			  		<li><a href="../../deportistas/index.html">Deportistas</a></li>
+			  		<li><a href="../../deportistas/categorias/index.html">Categorías</a></li>			
+			  		<li><a href="../../deportistas/formacion/index.html">Formación</a></li>			
+			  		<li><a href="../../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
+			  		<li><a href="../../deportistas/torneos/index.html">Torneos</a></li>			
+		  		</ul>
+			  </a>
+			  <a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../../control_existencias/Articulos/index - articulos.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+			  <ul>
+			  		<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+			  		<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+			  		<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+			  </ul>
+			  </a>
+			  <a href="../../publicaciones/Publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </a>
+			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
-		<article class="col-sm-10">
+		<article class="col-lg-10 col-md-10 col-sm-10">
 			<!-- Migas de pan -->
 			<div class="container-fluid">				
 				
@@ -78,22 +103,22 @@
 					<li>Registrar</li>
 				</ol>
 
-				<div class="col-sm-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<!-- contenido -->
 					<fieldset>
 						<legend>Registrar Roles</legend>						
 						<p class="text-danger">* Campos Requeridos</p>
 						<form action="">
-							<div class="col-sm-offset-2 col-sm-8">
+							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
 								
 								<div class="form-group row">
-									<div class="col-sm-12">
+									<div class="col-lg-12 col-md-12 col-sm-12">
 										<label><span class="text-danger">*</span> Nombre</label>
 										<input type="text" class="form-control" placeholder="">
 									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-12">
+									<div class="col-lg-12 col-md-12 col-sm-12">
 										<label>Descripción</label>
 										<textarea class="form-control" name="" id="" cols="30" rows="5">
 											
@@ -101,7 +126,7 @@
 									</div>
 								</div>
 								<div class="form-group row">
-									<div class="col-sm-6">
+									<div class="col-lg-6 col-md-6 col-sm-6">
 										<label>Módulo</label>
 										<select name="" id="" class="form-control select-two">
 											<option value="">Deportistas</option>
@@ -109,7 +134,7 @@
 											<option value=""></option>
 										</select>										
 									</div>
-									<div class="col-sm-6">
+									<div class="col-lg-6 col-md-6 col-sm-6">
 										<label>Privilegios</label>
 										<div class="btn-group lista-permisos" data-toggle="buttons">
 											<label class="btn btn-primary">
@@ -126,13 +151,13 @@
 								</div>
 							</div>
 							<div class="form-group row">
-								<div class="col-sm-offset-2 col-sm-4">
+								<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-4 col-md-4 col-sm-4">
 									<button class="btn btn-success btn-block">
 										<i class="fa fa-floppy-o"></i>
 										Guardar
 									</button>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-lg-4 col-md-4 col-sm-4">
 									<a href="index.html" class="btn btn-default btn-block">
 										<i class="fa fa-reply"></i> 
 										Cancelar

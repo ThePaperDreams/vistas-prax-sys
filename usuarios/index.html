@@ -56,18 +56,43 @@
 				</div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-				<a href="#" class="list-group-item active"><i class="fa fa-user"></i> Usuarios</a>
-				<a href="#" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
-				<a href="#" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-				<a href="#" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
-				<a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
-				<a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			  <a href="index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios
+			  <ul>
+			  		<li><a href="index.html">Usuarios</a></li>
+			  		<li><a href="roles/index.html">Roles</a></li>
+			  </ul>
+			  </a>
+			  <a href="../deportistas/index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
+			  	<ul>
+			  		<li><a href="../deportistas/index.html">Deportistas</a></li>
+			  		<li><a href="../deportistas/categorias/index.html">Categorías</a></li>			
+			  		<li><a href="../deportistas/formacion/index.html">Formación</a></li>			
+			  		<li><a href="../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
+			  		<li><a href="../deportistas/torneos/index.html">Torneos</a></li>			
+		  		</ul>
+			  </a>
+			  <a href="../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="../control_existencias/Articulos/index - articulos.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias
+			  <ul>
+			  		<li><a href="../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+			  		<li><a href="../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+			  		<li><a href="../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+			  </ul>
+			  </a>
+			  <a href="../publicaciones/Publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </a>
+			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
-		<article class="col-sm-10">
+		<article class="col-lg-10 col-md-10 col-sm-10">
 			<!-- Migas de pan -->
 			<div class="container-fluid">				
 				
@@ -76,7 +101,7 @@
 					<li>Gestionar Usuarios</li>
 				</ol>
 
-				<div class="col-sm-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<!-- Todo el contenido -->				
 					<fieldset>
 						<legend>Usuarios</legend>
@@ -90,7 +115,7 @@
 							<div class="panel-body">
 								<form class="form-inline" action="">
 
-									<div class="col-sm-9 form-inline-space">
+									<div class="col-lg-9 col-md-9 col-sm-9 form-inline-space">
 										<div class="form-group">
 											<input class="form-control" type="text" placeholder="Identificación">
 										</div>
