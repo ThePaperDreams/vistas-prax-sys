@@ -10,12 +10,14 @@
 		<link rel="stylesheet" href="../../../recursos/plugins/jquery-ui/jquery-ui.css">
 		<link rel="stylesheet" href="../../../recursos/plugins/bootstrapFileInput/css/fileinput.min.css">
 		<!-- importar el código javascript -->
-		<script src="../../../recursos/js/jquery.js"></script>
+		<script src="../../../recursos/js/jquery.js"></script>	
 		<script src="../../../recursos/js/bootstrap.js"></script>	
-		<script src="../../../recursos/js/select2.js"></script>	
-		<script src="../../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
-		<script src="../../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+		<script src="../../../recursos/js/select2.js"></script>
+		<script src="../../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+		<script src="../../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
 		<script src="../../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+		<script src="../../../recursos/js/personalizados.js"></script>
+
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +26,7 @@
 
 	<body>
 		<header>
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -59,20 +61,49 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <a href="../../../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="../../../Categorías/index.html" class="list-group-item active"><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="../../../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
-			  <a href="../../../publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
+			  <div class="list-group-item"><i class="fa fa-user"></i> Usuarios
+				  <ul>
+				  		<li><a href="../../../usuarios/index.html">Gestionar Usuarios</a></li>
+				  		<li><a href="../../../usuarios/roles/index.html">Gestionar Roles</a></li>
+				  </ul>
+			  </div>
+
+  			  <div class="list-group-item sub-menu active"><i class="fa fa-futbol-o"></i> Deportistas 
+				<ul>
+					<li><a href="../../index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="../../acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="../../categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="../../prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="../../formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="../../torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+				</ul>
+			  </div>
+
+			  <a href="../../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+
+			  <div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+				  <ul>
+				  		<li><a href="../../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+				  		<li><a href="../../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+				  		<li><a href="../../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+				  </ul>
+			  </div>
+			  <div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="../../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </div>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
 		<article class="col-sm-10">
 			<!-- Migas de pan -->
-			<div class="container">				
+			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
 					<li><a href="#">Inicio</a></li>

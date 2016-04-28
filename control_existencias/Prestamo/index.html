@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
-		<title>Prax-sys Publicaciones</title>
+		<title>Prax-sys Existencias-Gestionar</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
 		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
@@ -13,6 +13,9 @@
 		<script src="../../recursos/js/bootstrap.js"></script>	
 		<script src="../../recursos/js/select2.js"></script>
 		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+		<script src="../../recursos/js/personalizados.js"></script>	
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,112 +60,111 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-lg-2  col-md-2 col-sm- 2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <a href="../../ex.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios
+			  <div class="list-group-item"><i class="fa fa-user"></i> Usuarios
+				  <ul>
+				  		<li><a href="../usuarios/index.html">Gestionar Usuarios</a></li>
+				  		<li><a href="../usuarios/roles/index.html">Gestionar Roles</a></li>
+				  </ul>
+			  </div>
+
+  			  <div class="list-group-item sub-menu active"><i class="fa fa-futbol-o"></i> Deportistas 
+				<ul>
+					<li><a href="../../deportistas/index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="../../deportistas/acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="../../deportistas/categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="../../deportistas/prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="../../deportistas/formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="../../deportistas/torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+				</ul>
+			  </div>
+
+			  <a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+
+			  <div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+				  <ul>
+				  		<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+				  		<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+				  		<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+				  </ul>
+			  </div>
+			  <div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
 			  <ul>
-			  		<li><a href="../../usuarios/index.html">Usuarios</a></li>
-			  		<li><a href="../../usuarios/roles/index.html">Roles</a></li>
+			  		<li><a href="../../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../../publicaciones/Eventos/index_evento.html">Eventos</a></li>
+			  		<li><a href="../../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
 			  </ul>
-			  </a>
-			  <a href="../../index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
-			  	<ul>
-			  		<li><a href="../../deportistas/index.html">Deportistas</a></li>
-			  		<li><a href="../../deportistas/categorias/index.html">Categorías</a></li>			
-			  		<li><a href="../../deportistas/formacion/index.html">Formación</a></li>			
-			  		<li><a href="../../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
-			  		<li><a href="../../deportistas/torneos/index.html">Torneos</a></li>			
-		  		</ul>
-			  </a>
-			  <a href="../../html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../tencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias
-			  <ul>
-			  		<li><a href="../../Articulos/index - articulos.html">Artículos</a></li>
-			  		<li><a href="../../Categoria/index-categoria.html">Categoría</a></li>
-			  		<li><a href="../../index - prestamo.html">Préstamo</a></li>
-			  </ul>
-			  </a>
-			  <a href="../../s/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
-			  <ul>
-			  		<li><a href="index.html">Publicaciones</a></li>
-			  		<li><a href="../publicaciones/Eventos/index_evento.html">Eventos</a></li>
-			  		<li><a href="../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
-			  </ul>
-			  </a>
+			  </div>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
-
-		<article class="col-lg-10 col-md-10 col-sm- 10">
+		<article class="col-lg-10  col-md-10  col-sm-10">
 			<!-- Migas de pan -->
 			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
-					<li><a href="../../index.html">Inicio</a></li>
-					<li>Gestionar Publicaciones</li>
+					<li><a href="index.html">Inicio</a></li>
+					<li>Gestión de Préstamo</li>
 				</ol>
-
-				<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="col-lg-12  col-md-12  col-sm-12">
 					<!-- Todo el contenido -->				
 					<fieldset>
-						<legend>Publicaciones</legend>
+						<legend>Préstamo</legend>
 						<div class="panel panel-default">							
 							<div class="panel-body">
 								<form class="form-inline" action="">
 									<div class="form-group">
-										<input class="form-control select-two" type="text" placeholder="Título de Publicación">
+										<input class="form-control" type="text" placeholder="Nombre del Articulo">
 									</div>
 									<div class="form-group">
-										<input class="form-control select-two" type="text" placeholder="Tipo de Publicación">
-									</div>
-									<div class="form-group">
-										<select class="form-control select-two" type="text">
-										  	<option value="">Estado</option>
-										  	<option value="">Activo</option>
-										  	<option value="">Inactivo</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label>Fecha de Publicación</label>
-										<input class="form-control date-picker" type="date">
+										<input class="form-control" type="text" placeholder="Responsable">
 									</div>
 									<div class="form-group">
 										<button class="btn btn-default">
 											<i class="fa fa-filter"></i>
 											Filtrar
 										</button>
+										<a href="crear.html" class ="btn btn-primary">							
+											<i class="fa fa-plus-square"></i>
+											Registrar Prestamo										
+										</a>
 									</div>
 								</form>
 							</div>
 						</div>
-
-						<div class="form-group">
-							<a href="crearp.html" class="btn btn-primary">
-								<i class="fa fa-newspaper-o"></i> Registrar Publicación
-							</a>
-						</div>
-
 						<table class="table table-striped table-hover">
 							<thead>
 								<tr>
-									<th>Título de Publicación</th>
-									<th>Tipo de Publicación</th>
-									<th>Estado</th>
-									<th>Fecha de Publicación</th>
-									<th>Fecha de Cierre</th>
+									<th>Nombre del Artículo</th>
+									<th>Responsable</th>
+									<th>Unidades</th>
+									<th>Fecha</th>
 									<th>Opciones</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>Felicitaciones Categoría Infantil</td>
-									<td>Noticia</td>
-									<td>Activo</td>
-									<td>00-00-00</td>
-									<td>00-00-0000</td>
+									<td>Balón</td>
+									<td>Implementos Deportivos</td>
+									<td>100</td>
+									<td>00/00/00</td>
 									<td>
-										<a href="detalle.html"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a> 
-										<a href="modificar.html"><button class="btn btn-success"><i class="fa fa-pencil"></i></button></a> 
+										<a href="prestamo_historial.html"><button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Historial de Préstamo" data-trigger="hover"><i class="fa fa-eye"></i></button></a> 
+										<a href="prestamo_individual.html"><button class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Historial de Préstamo Individual" data-trigger="hover"><i class="fa fa-history"></i></button>
+										</a> 
+										<a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
+									</td>
+								</tr>
+								<tr>
+									<td>Silla</td>
+									<td>Enseres</td>
+									<td>60</td>
+									<td>00/00/00</td>
+									<td>
+										<a href="prestamo_historial.html"><button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Historial de Préstamo" data-trigger="hover"><i class="fa fa-eye"></i></button></a> 
+										<a href="prestamo_individual.html"><button class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Historial de Préstamo Individual" data-trigger="hover"><i class="fa fa-history"></i></button>
+										</a> 
 										<a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
 									</td>
 								</tr>
@@ -241,7 +243,7 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="6">										
+									<td colspan="6" class="text-right">										
 										<nav>
 											<ul class="pagination">
 												<li><a href="#"><span aria-hidden="true">&laquo;</span></a></li>
@@ -262,13 +264,9 @@
 
 					</fieldset>
 				</div>
-
 			</div>
-
 		</article>
-
 		<footer>
-			
 		</footer>
 		<script>
 			jQuery(function(){
