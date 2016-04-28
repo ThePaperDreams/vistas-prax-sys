@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
-		<title>Prax-sys Eventos</title>
+		<title>Prax-sys Publicaciones</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
 		<link rel="stylesheet" href="../../recursos/fa/css/font-awesome.css">
@@ -11,8 +11,9 @@
 		<!-- importar el código javascript -->
 		<script src="../../recursos/js/jquery.js"></script>	
 		<script src="../../recursos/js/bootstrap.js"></script>	
-		<script src="../../recursos/js/select2.js"></script>
-		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+		<script src="../../recursos/js/select2.js"></script>	
+		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../recursos/js/personalizados.js"></script>
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,39 +58,43 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-lg-2  col-md-2 col-sm- 2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <a href="../../ex.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios
+			  <div class="list-group-item"><i class="fa fa-user"></i> Usuarios
+				  <ul>
+				  		<li><a href="../usuarios/index.html">Gestionar Usuarios</a></li>
+				  		<li><a href="../usuarios/roles/index.html">Gestionar Roles</a></li>
+				  </ul>
+			  </div>
+
+  			  <div class="list-group-item sub-menu active"><i class="fa fa-futbol-o"></i> Deportistas 
+				<ul>
+					<li><a href="../../index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="../../acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="../../categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="../../prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="../../formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="../../torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+				</ul>
+			  </div>
+
+			  <a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+
+			  <div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+				  <ul>
+				  		<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+				  		<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+				  		<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+				  </ul>
+			  </div>
+			  <div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
 			  <ul>
-			  		<li><a href="../../usuarios/index.html">Usuarios</a></li>
-			  		<li><a href="../../usuarios/roles/index.html">Roles</a></li>
+			  		<li><a href="../Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="index.html">Eventos</a></li>
+			  		<li><a href="../Tipo Eventos/index.html">Tipo de Eventos</a></li>
 			  </ul>
-			  </a>
-			  <a href="../../index.html" class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas
-			  	<ul>
-			  		<li><a href="../../deportistas/index.html">Deportistas</a></li>
-			  		<li><a href="../../deportistas/categorias/index.html">Categorías</a></li>			
-			  		<li><a href="../../deportistas/formacion/index.html">Formación</a></li>			
-			  		<li><a href="../../deportistas/prestamos/index.html">Préstamo de Deportistas</a></li>
-			  		<li><a href="../../deportistas/torneos/index.html">Torneos</a></li>			
-		  		</ul>
-			  </a>
-			  <a href="../../html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../../tencias/index.html" class="list-group-item active"><i class="fa fa-cubes"></i> Control de Existencias
-			  <ul>
-			  		<li><a href="../../Articulos/index - articulos.html">Artículos</a></li>
-			  		<li><a href="../../Categoria/index-categoria.html">Categoría</a></li>
-			  		<li><a href="../../index - prestamo.html">Préstamo</a></li>
-			  </ul>
-			  </a>
-			  <a href="../../s/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
-			  <ul>
-			  		<li><a href="../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
-			  		<li><a href="index_evento.html">Eventos</a></li>
-			  		<li><a href="../publicaciones/Tipo Eventos/index_tipo_evento.html">Tipo de Eventos</a></li>
-			  </ul>
-			  </a>
-			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			  </div>
+			  <a href="../#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
