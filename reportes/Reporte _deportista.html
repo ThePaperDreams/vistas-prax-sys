@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Prax-sys Reportes - Reporte de mensualidades</title>
+
+  <link rel="stylesheet" href="../recursos/css/bootstrap.css">
+  <link rel="stylesheet" href="../recursos/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="../recursos/css/personalizados.css">
+  <link rel="stylesheet" href="../recursos/css/select2.css">
+  <link rel="stylesheet" href="../recursos/plugins/jquery-ui/jquery-ui.css">
+  <!-- importar el código javascript -->
+  <script src="../recursos/js/jquery.js"></script>
+  <script src="../recursos/js/bootstrap.js"></script>
+  <script src="../recursos/js/select2.js"></script>
+  <script src="../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+  <script src="../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+  <script src="../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+  <script src="../recursos/js/personalizados.js"></script>
+
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="reporte">
+
+  <article class="container">
+    <!-- Migas de pan -->
+
+
+      <div class="col-sm-12">
+        <!-- Todo el contenido -->
+        <fieldset>
+          <legend>Reporte Deportista</legend>
+
+        </fieldset>
+        <div class="col-sm-offset-4 col-sm-4">
+
+          <img src="../recursos/img/prax-sys/logo_.png" height="100%" width="100%">
+          <h3 class="text-center">
+            CLUB DEPORTIVO PRAXIS
+          </h3>
+        </div>
+        <div class="col-sm-offset-1 col-sm-10" style="margin-bottom:50px;margin-top:50px">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-sm-offset-1 col-sm-10">
+
+        <table class="table table-striped table-hover">
+          <thead>
+            <th class="text-center" colspan="8">
+              REPORTE DEPORTISTA
+            </th>
+            <tr>
+              <th>Nombres</th>
+              <th>Categoria</th>
+              <th>Tipo Documento</th>
+              <th>No. Documento</th>
+              <th>Acudientes</th>
+              <th>Matricula</th>
+              <th>Prestamo</th>
+              <th>Tipo de Prestamo</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Jorge Quiroz</td>
+              <td>Pre-pony</td>
+              <td>TI</td>
+              <td>123456</td>
+              <td>Miriam Serna</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Salida</td>
+            </tr>
+            <tr>
+              <td>Brayan Bedoya</td>
+              <td>Pre-pony</td>
+              <td>TI</td>
+              <td>123456</td>
+              <td>Carlos Bedoya</td>
+              <td>Si</td>
+              <td>No</td>
+              <td>No Presenta</td>
+            </tr>
+            <tr>
+              <td>Cristian Martinez</td>
+              <td>Infantil</td>
+              <td>TI</td>
+              <td>123456</td>
+              <td>Doly Valdez</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Entrada</td>
+            </tr>
+            <tr>
+              <td>Charles Jimenez</td>
+              <td>Pre-pony</td>
+              <td>TI</td>
+              <td>123456</td>
+              <td>Teresita Ramirez</td>
+              <td>Si</td>
+              <td>No</td>
+              <td>No presenta</td>
+            </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </div>
+<div class="col-sm-offset-1 col-sm-4" style="margin-top:40px">
+  <p>
+    ____________________________
+    <br>Cristian Martinez.
+    <br>Presidente Club
+  </p>
+</div>
+  </article>
+
+
+  <script>
+    jQuery(function(){
+      jQuery(".select-two").select2({
+        width: "100%",
+      });
+      jQuery(".date-picker").datepicker();
+    });
+  </script>
+</body>
+</html>
