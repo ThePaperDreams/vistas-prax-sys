@@ -1,6 +1,8 @@
 	<!DOCTYPE html>
 	<html lang="es">
 	<head>
+		<link rel="icon" href="../../recursos/img/prax-sys/logo.png">
+
 		<title>Prax-sys Torneos-Gestionar</title>
 
 		<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
@@ -13,6 +15,9 @@
 		<script src="../../recursos/js/bootstrap.js"></script>	
 		<script src="../../recursos/js/select2.js"></script>
 		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
+		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+		<script src="../../recursos/js/personalizados.js"></script>
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,10 +116,7 @@
 					<fieldset>
 						<legend>Torneos</legend>
 						<div class="form-group">
-							<div class="col-sm-3">								
-								<a href="../index.html" class="btn btn-default">
-									<i class="fa fa-reply"></i> Volver
-								</a>
+							<div class="col-sm-3">
 							</div>														
 							<div class="col-sm-offset-6 col-sm-3">
 								<a href="crear.html" class="btn btn-default btn-block">
@@ -182,20 +184,25 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="6">										
-										<nav>
-											<ul class="pagination">
-												<li><a href="#"><span aria-hidden="true">&laquo;</span></a></li>
-												
-												<li><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#">4</a></li>
-												<li><a href="#">5</a></li>
+									<td colspan="6">
+										<div class="col-sm-4 col-md-4 col-lg-4">
+											<br><a href="../../index.html" class="btn btn-default"> <i class="fa fa-reply"></i> volver</a>
+										</div>									
+										<div class="col-sm-8 col-md-8 col-lg-8 text-right">
+											<nav>
+												<ul class="pagination">
+													<li><a href="#"><span aria-hidden="true">&laquo;</span></a></li>
+													
+													<li><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
 
-												<li><a href="#"><span aria-hidden="true">&raquo;</span></a></li>
-											</ul>
-										</nav>
+													<li><a href="#"><span aria-hidden="true">&raquo;</span></a></li>
+												</ul>
+											</nav>
+										</div>
 									</td>
 								</tr>
 							</tfoot>
