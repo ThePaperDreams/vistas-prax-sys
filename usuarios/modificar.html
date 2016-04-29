@@ -108,7 +108,6 @@
 					<li><a href="index.html">Gestionar Usuarios</a></li>
 					<li>Modificar</li>
 				</ol>
-
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<!-- contenido -->
 					<fieldset>
@@ -184,7 +183,7 @@
 												</select>										
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-3">
-												<a href="roles/crear.html" class="btn btn-success btn-block">
+												<a href="roles/crear.html" data-toggle="modal" data-target="#modal1" class="btn btn-success btn-block">
 													<i class="fa fa-plus"></i>
 												</a>
 											</div>
@@ -245,6 +244,73 @@
 		</article>
 		<footer>			
 		</footer>
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Registrar Rol</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<form action="">
+								<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">								
+									<div class="form-group row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label><span class="text-danger">*</span> Nombre</label>
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label>Descripción</label>
+											<textarea class="form-control" name="" id="" cols="30" rows="5">
+
+											</textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label>Módulo</label>
+											<select name="" id="" class="form-control select-two">
+												<option value="">Deportistas</option>
+												<option value="">Usuarios</option>
+												<option value=""></option>
+											</select>										
+										</div>
+									</div>	
+									<div class="form-group row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label>Privilegios</label>
+											<div class="btn-group lista-permisos" data-toggle="buttons">
+												<label class="btn btn-primary">
+													<input type="checkbox" autocomplete="off">Registrar
+												</label>
+												<label class="btn btn-primary">
+													<input type="checkbox" autocomplete="off">Eliminar
+												</label>
+												<label class="btn btn-primary">
+													<input type="checkbox" autocomplete="off">Consulta
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>							
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">			<i class="fa fa-floppy-o"></i>
+							Guardar
+						</button>
+						<a href="index.html" class="btn btn-default" data-dismiss="modal">
+							<i class="fa fa-reply"></i> 
+							Cancelar
+						</a>						
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<script>
 			jQuery(function(){
 				jQuery(".select-two").select2({
