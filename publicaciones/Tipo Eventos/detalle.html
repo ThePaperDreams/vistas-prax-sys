@@ -13,6 +13,7 @@
 		<script src="../../recursos/js/bootstrap.js"></script>	
 		<script src="../../recursos/js/select2.js"></script>	
 		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>
+		<script src="../recursos/js/personalizados.js"></script>
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,60 +58,89 @@
 			  </div><!-- /.container-fluid -->
 			</nav>			
 		</header>
-		<aside class="col-sm-2">
+		<aside class="col-lg-2  col-md-2  col-sm-2">
 			<div class="list-group">
-			  <a href="../usuarios/index.html" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="../deportistas/index.html" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
-			  <a href="../control_existencias/index.html" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
-			  <a href="../publicaciones/index.html" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
-			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+			  <div class="list-group-item"><i class="fa fa-user"></i> Usuarios
+				  <ul>
+				  		<li><a href="../usuarios/index.html">Gestionar Usuarios</a></li>
+				  		<li><a href="../usuarios/roles/index.html">Gestionar Roles</a></li>
+				  </ul>
+			  </div>
+
+  			  <div class="list-group-item sub-menu active"><i class="fa fa-futbol-o"></i> Deportistas 
+				<ul>
+					<li><a href="../../index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="../../acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="../../categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="../../prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="../../formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="../../torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+				</ul>
+			  </div>
+
+			  <a href="../../pago/index.html" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+
+			  <div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+				  <ul>
+				  		<li><a href="../../control_existencias/Articulos/index - articulos.html">Artículos</a></li>
+				  		<li><a href="../../control_existencias/Categoria/index-categoria.html">Categoría</a></li>
+				  		<li><a href="../../control_existencias/Prestamo/index - prestamo.html">Préstamo</a></li>
+				  </ul>
+			  </div>
+			  <div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+			  <ul>
+			  		<li><a href="../Publicaciones/index.html">Publicaciones</a></li>
+			  		<li><a href="../index.html">Eventos</a></li>
+			  		<li><a href="index.html">Tipo de Eventos</a></li>
+			  </ul>
+			  </div>
+			  <a href="../#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
 			</div>
 		</aside>
 
-		<article class="col-sm-10">
+		<article class="col-lg-10 col-md-10 col-sm-10">
 			<!-- Migas de pan -->
 			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
 					<li><a href="#">Inicio</a></li>
-					<li><a href="index.html">Gestionar Publicaciones</a></li>
+					<li><a href="index.html">Gestionar Deportistas</a></li>
 					<li>Detalles</li>
 				</ol>
 
-				<div class="col-sm-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<fieldset>
-						<legend>Detalles de Publicación</legend>
-						<div class="col-sm-offset-2 col-sm-8">							
+						<legend>Detalles Deportista</legend>
+						<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">							
 							<table class="table table-hover table-striped">
 								<tbody>
 									<tr>
-										<th>Título de Publicación:</th>
-										<td>Bienvenido Profe Carlos</td>
+										<th>Nombres:</th>
+										<td>Jorge Alejandro</td>
 									</tr>
 									<tr>
-										<th>Autor:</th>
-										<td>Charles Stiven</td>
+										<th>Apellidos:</th>
+										<td>Quiroz Serna</td>
 									</tr>
 									<tr>
-										<th>Tipo de Publicación:</th>
-										<td>Noticia</td>
+										<th>Tipo Documento:</th>
+										<td>Cédula de Ciudadanía</td>
 									</tr>
 									<tr>
-										<th>Estado:</th>
-										<td>Inactivo</td>
+										<th>Documento:</th>
+										<td>123456</td>
 									</tr>
 									<tr>
-										<th>Fecha de Publicación:</th>
+										<th>Fecha:</th>
 										<td>00-00-0000</td>
 									</tr>
 									<tr>
-										<th>Fecha de Retiro</th>
-										<td>00-00-0000</td>
+										<th>Teléfono:</th>
+										<td>123456</td>
 									</tr>
 									<tr>
-										<th>Descripción:</th>
-										<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolorem assumenda doloremque, reiciendis, inventore nesciunt quas corporis quo, iste laudantium alias nisi nemo temporibus. Perspiciatis distinctio maiores atque laborum repudiandae?</td>
+										<th>Celular:</th>
+										<td></td>
 									</tr>
 								</tbody>
 							</table>
@@ -142,5 +172,6 @@
 				jQuery(".date-picker").datepicker();
 			});
 		</script>
+
 	</body>
 	</html>
