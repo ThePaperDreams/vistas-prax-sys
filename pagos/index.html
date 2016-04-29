@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="../recursos/css/select2.css">
 		<link rel="stylesheet" href="../recursos/plugins/jquery-ui/jquery-ui.css">
 		<!-- importar el código javascript -->
-		<script src="../recursos/js/jquery.js"></script>	
-		<script src="../recursos/js/bootstrap.js"></script>	
+		<script src="../recursos/js/jquery.js"></script>
+		<script src="../recursos/js/bootstrap.js"></script>
 		<script src="../recursos/js/select2.js"></script>
 		<script src="../recursos/plugins/jquery-ui/jquery-ui.js"></script>
 		<script src="../recursos/js/personalizados.js"></script>	
@@ -48,21 +48,21 @@
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Ver perfil</a></li>			            
+			            <li><a href="#">Ver perfil</a></li>
 			            <li><a href="#">Cerrar sesión</a></li>
 			          </ul>
 			        </li>
-			      </ul>	    
+			      </ul>
 
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
-			</nav>			
+			</nav>
 		</header>
 		<aside class="col-sm-2">
 			<div class="list-group">
 			  <a href="#" class="list-group-item"><i class="fa fa-user"></i> Usuarios</a>
-			  <a href="#" class="list-group-item active"><i class="fa fa-futbol-o"></i> Deportistas</a>
-			  <a href="#" class="list-group-item"><i class="fa fa-credit-card"></i> Pagos</a>
+			  <a href="#" class="list-group-item"><i class="fa fa-futbol-o"></i> Deportistas</a>
+			  <a href="#" class="list-group-item active"><i class="fa fa-credit-card"></i> Pagos</a>
 			  <a href="#" class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias</a>
 			  <a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones</a>
 			  <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
@@ -71,23 +71,28 @@
 
 		<article class="col-sm-10">
 			<!-- Migas de pan -->
-			<div class="container-fluid">				
-				
+			<div class="container-fluid">
+
 				<ol class="breadcrumb">
 					<li><a href="../../index.html">Inicio</a></li>
 					<li>Gestionar Pagos</li>
 				</ol>
 
 				<div class="col-sm-12">
-					<!-- Todo el contenido -->				
+					<!-- Todo el contenido -->
 					<fieldset>
+<<<<<<< HEAD:pagos/index.html
 						<legend>Gestionar Pagos</legend>
 						<div class="panel panel-default">							
+=======
+						<legend>Gestionar pago</legend>
+						<div class="panel panel-default">
+>>>>>>> origin/Roland:pagos/index_pago.html
 							<div class="panel-body">
 								<form class="form-inline" action="">
 									<div class="form-group">
 										<input class="form-control" type="text" placeholder="Deportista">
-										
+
 											<div class="btn-group"> <a class="btn btn-default dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Mes Cancelado<span class="caret"></span></a>
 				            					<ul class="dropdown-menu">
 									                <li>Enero</li>
@@ -112,24 +117,29 @@
 									                <li>Mora</li>
 									                <li class="divider"></li>
 									            </ul>
-										 </div>        
+										 </div>
 										<div class="form-group">
 											<div>
 												<button class="btn btn-default"><i class="fa fa-filter"></i>Filtrar</button>
-												<button class="btn btn-success"><i class="fa fa-plus"></i>Registrar Pago</button>
-												<button class="btn <btn-primary></btn-primary>"><i class="fa fa-search"></i>Pagos Pendientes</button>
+												<a href="crear_pago.html" class="btn btn-default">
+											  </i>Registrar Pago</a>
+												<a href="pago_pendiente.html" class="btn btn-default">
+											  </i>Consultar pendientes</a>
 											</div>
-										</div>	
+										</div>
 								</form>
 							</div>
 						</div>
 
+<<<<<<< HEAD:pagos/index.html
 						<div class="form-group">
 							<a href="crear.html" class="btn btn-primary">
 								<i class="fa fa-user-plus"></i> Registrar Pagos
 							</a>
 						</div>
 
+=======
+>>>>>>> origin/Roland:pagos/index_pago.html
 						<table class="table table-striped table-hover">
 							<thead>
 								<tr>
@@ -153,9 +163,8 @@
 									<td>1.500</td>
 									<td>Pagado</td>
 									<td>
-										<a href="detalle.html"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a> 
-										<a href="modificar.html"><button class="btn btn-success"><i class="fa fa-pencil"></i></button></a> 
-										<a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
+										<a href="detalle_pago.html"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a>
+									  <a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a>
 									</td>
 								</tr>
 								<tr>
@@ -251,11 +260,11 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="6">										
+									<td colspan="6">
 										<nav>
 											<ul class="pagination">
 												<li><a href="#"><span aria-hidden="true">&laquo;</span></a></li>
-												
+
 												<li><a href="#">1</a></li>
 												<li><a href="#">2</a></li>
 												<li><a href="#">3</a></li>
@@ -278,7 +287,7 @@
 		</article>
 
 		<footer>
-			
+
 		</footer>
 		<script>
 			jQuery(function(){
