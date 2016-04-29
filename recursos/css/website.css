@@ -1,0 +1,88 @@
+
+#banner-carousel img{
+    
+}
+.navbar-brand{
+	padding-left: 160px;
+	position: relative;
+}
+#prax-sys-flag{
+    max-width: 150px;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    z-index: 1000;;
+}
+.navbar-inverse {
+    background-color: rgba(34, 34, 34, 0.88);
+    border-color: none;
+}
+body{
+	background-image: url(../img/publicaciones/bg.jpg);
+	background-attachment: fixed;
+}
+.container.container-body{
+	background-color: rgba(34, 34, 34, 0.88);
+	color: white;
+    padding-top: 50px;
+}
+
+.content-separator{
+    background-color: #080808;
+    width: 100%;
+    height: 52px;
+}
+
+.panel-publicaiones{
+	background-color: transparent;
+	/*padding: 15px;*/
+}
+.container.container-body fieldset legend{
+	color: white;
+}
+img.media-object.noticia{
+	max-width: 160px;
+}
+.media-object.noticias{
+	margin-bottom: 10px;
+}
+img.eventos{
+	max-width: 100%;
+}
+#publicidad-img{
+	max-width: 100%;
+}
+#social-links{
+    position: fixed;
+    right: 5px;
+    top: 40%;
+}
+#social-links li{
+	list-style-type: none;
+	transition: all 1s;
+}
+#social-links li:hover{
+    transform: translate(-20px, 0px);
+}
+#social-links li img{
+    width: 60px;	
+}
+footer{
+	padding: 50px;
+    background-color: #080808;	
+    color: white;
+}
+.carousel-caption{
+    background-color: rgba(8, 8, 8, 0.88);
+    width: 100%;
+    margin: 0px;
+    left: 0%;
+    bottom: 0;
+    padding: 2% 20%;
+}
+.user-comment{
+	max-width: 70px;
+}
+.comment{
+	margin-bottom: 20px;
+}
