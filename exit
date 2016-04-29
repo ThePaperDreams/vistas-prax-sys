@@ -1,0 +1,233 @@
+[33mcommit c05eeac54ef2cb78c2f907fe80860a56aafbe441[m
+Merge: b97eb73 b42eb27
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Fri Apr 29 09:44:12 2016 -0500
+
+    Se corrigen los errores y conflictos
+
+[33mcommit b97eb734e2f4d4a73241702a91ea3bb7d74aeb55[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Fri Apr 29 09:40:25 2016 -0500
+
+    Se fusionan todas las ramas
+
+[33mcommit 97746dbc983d1dd4894020f8bb40a2faa8f976cb[m
+Merge: c39680d e76991c
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Fri Apr 29 09:35:44 2016 -0500
+
+    Merge remote-tracking branch 'origin/Bryan' into jako
+
+[33mcommit c39680d0ccca35a3ce70aa47c16f3e600946970b[m
+Merge: ee9668d b341f94
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Fri Apr 29 09:30:39 2016 -0500
+
+    Merge remote-tracking branch 'origin/charles' into jako
+
+[33mcommit e76991c87f656177a5d6ee473a2342faaea2b326[m
+Author: Giggs3244 <Bryan.Bedoy@gmail.com>
+Date:   Fri Apr 29 06:32:32 2016 -0500
+
+    Última modificación no hago más
+
+[33mcommit ee9668d09e99e17f5f2f42cd698dfbf207b4c0a6[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Thu Apr 28 20:33:52 2016 -0500
+
+    Se incorpora el login en la parte publica
+
+[33mcommit 098292ed7ebd72b72127dd3644bcfbe035b4dd33[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Thu Apr 28 19:54:34 2016 -0500
+
+    Se realizan modificaciones a los enlaces y se agregan las vistas de la parte publica del sitio
+
+[33mcommit b341f94f61bff37357e2ae4510ac726f92b3b570[m
+Author: TomBrownC <cs1@misena.edu.co>
+Date:   Thu Apr 28 10:09:11 2016 -0500
+
+    Full todo
+
+[33mcommit 576cdcb5ec55a92483114703ca06e2773aa74f49[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Thu Apr 28 08:53:45 2016 -0500
+
+    Se crean las vistas de asistencia y se corrige la vista de crear torneo
+
+[33mcommit 6184395ab90ea4224bcefbea07c4b2cd753650b2[m
+Merge: 679a472 17d5968
+Author: TomBrownC <cs1@misena.edu.co>
+Date:   Thu Apr 28 06:39:51 2016 -0500
+
+    Se solucionaron conflictos en archivo registrar_devolucion
+
+[33mcommit 17d5968e4e14001f41fdaa40d64027155f04ea4a[m
+Merge: a3d9bbb 617330c
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Wed Apr 27 18:52:31 2016 -0500
+
+    Se corrigen conflictos al fusionar la rama de Bryan
+
+[33mcommit 617330c0d173409679bdb04b2270d29ae83df8d6[m
+Author: Giggs3244 <Bryan.Bedoy@gmail.com>
+Date:   Wed Apr 27 13:45:38 2016 -0500
+
+    Usuarios v3
+
+[33mcommit a3d9bbb70841c4c4961af38e3c44266097fe4265[m
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 12:49:29 2016 -0500
+
+    Correcciones de la paginación y botones
+
+[33mcommit ebfc1fc0e5e39d9de61d160fb61bc17240ec0eb1[m
+Merge: a393b10 85a895e
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 11:37:01 2016 -0500
+
+    Merge branch 'Cristian'
+
+[33mcommit a393b101529ab0c96a2458fdcfede3e1a2dd98f8[m
+Merge: 37a2b7a fc150f9
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 11:35:01 2016 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit fc150f93d666aa327a31c92ff643c0a87af78502[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Wed Apr 27 11:28:59 2016 -0500
+
+    Se corrigen los menús del módulo de deportistas
+
+[33mcommit b42eb27367142f2348213f10c6c9f2c3b0a8e1eb[m
+Author: rajimenez <rajimenez47@misena.edu.co>
+Date:   Wed Apr 27 11:20:07 2016 -0500
+
+    se corrigieron enlaces y se modifico lavista de pagos
+
+[33mcommit 85a895ed5c751b7b8f03082b349bf337cff38597[m
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 09:37:30 2016 -0500
+
+    Los link ahora dirigen y  se corrigieron errores
+
+[33mcommit 37a2b7a7980ec7b80677dfd6ac02a899ef16519a[m
+Merge: 350a4f9 027a30f
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 07:30:41 2016 -0500
+
+    Se solucionaron conflictos ocurridos durante el merge
+
+[33mcommit 027a30fb2f0ef110dfcb4da54bc2ca49d12f9ac1[m
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Wed Apr 27 07:21:21 2016 -0500
+
+    Elimine espacios innecesarios y di orden a los formularios
+
+[33mcommit 350a4f9d3a0daffeef69ddc0531204d8de918f62[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Wed Apr 27 07:15:02 2016 -0500
+
+    Se ajustan los links en el 70% del modulo de deportistas
+
+[33mcommit a90d8dc85e5f65f0f2361eb83b8b495e49f9bc70[m
+Merge: add0118 b881f35
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Tue Apr 26 19:53:24 2016 -0500
+
+    Merge remote-tracking branch 'origin/Bryan' into jako
+
+[33mcommit add0118be18ca8ad97476726fb17de5c185365da[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Tue Apr 26 19:14:47 2016 -0500
+
+    Se corrigen los containers (se cambian de container a container-fluid) de las vistas
+
+[33mcommit 991a29c1cb5187ef64cf14be9db727e597be4321[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Tue Apr 26 18:31:48 2016 -0500
+
+    Se incorpora la dashboard y se organizan los estilos del menú
+
+[33mcommit 87367956d71d34e0f55f88c282e4478bb405778d[m
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Tue Apr 26 12:32:33 2016 -0500
+
+    Control de existencias v2
+
+[33mcommit b881f35c90bdef6a0f4a09714deb74cf9b965c4c[m
+Author: Giggs3244 <Bryan.Bedoy@gmail.com>
+Date:   Tue Apr 26 12:21:29 2016 -0500
+
+    Usuarios v2
+
+[33mcommit 679a4729e6b0181fd6833c45ccf5320245fe3dbd[m
+Author: TomBrownC <cs1@misena.edu.co>
+Date:   Tue Apr 26 09:57:07 2016 -0500
+
+    Publicaciones V2
+
+[33mcommit 19e78db84cfdc27648c5f44eee1a39f24163d2c3[m
+Merge: b00cde8 bbd53f9
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Mon Apr 25 14:14:53 2016 -0500
+
+    Merge remote-tracking branch 'origin/Charles'
+
+[33mcommit b00cde88b163ae4745086fd13fa49d00b2e0f6dd[m
+Merge: 554eb26 02d7ae0
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Mon Apr 25 14:12:12 2016 -0500
+
+    Merge remote-tracking branch 'origin/Cristian'
+
+[33mcommit 554eb2626efaa3adbc20ec462a821d16759b2aee[m
+Merge: 4cc53de 978dde7
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Mon Apr 25 14:06:14 2016 -0500
+
+    Merge remote-tracking branch 'origin/Bryan'
+
+[33mcommit 4cc53de2e5e944ce216ed6f19111888a59f6e2ad[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Mon Apr 25 13:58:25 2016 -0500
+
+    Se finaliza el módulo de deportistas
+
+[33mcommit 02d7ae0ebf8b42de1c266da160c0c0594b3a76bd[m
+Author: CristianMart <cmcris9@gmail.com>
+Date:   Fri Apr 22 11:23:49 2016 -0500
+
+    Se agrego el modulo Control de existencias
+
+[33mcommit bbd53f99aa8e75dca77281285e4bdf8a35ca469c[m
+Author: TomBrownC <cs1@misena.edu.co>
+Date:   Fri Apr 22 11:17:01 2016 -0500
+
+    Se agrego el modulo de pagos y publicaciones
+
+[33mcommit 978dde78b4a276058f80190c9940e193c7f58983[m
+Author: Giggs3244 <bryan.bedoy@gmail.com>
+Date:   Fri Apr 22 10:53:27 2016 -0500
+
+    Se agrega el modulo de usuarios
+
+[33mcommit 4cb08357c56972f71d1e5de3b2380155ee480a90[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Thu Apr 21 20:00:42 2016 -0500
+
+    Se incorporan los cruds de categorías y préstamos
+
+[33mcommit 9dc49001648f1a61e4a5d6ca602a4dbe6f0fcc79[m
+Author: jakolab <alejo.jko@gmail.com>
+Date:   Wed Apr 20 14:12:14 2016 -0500
+
+    Este es el primer commit con el ejemplo del crud de deportista
+
+[33mcommit 78f3b613903bcb5631c6ab5f6ea4812eb847a499[m
+Author: Jorge Alejandro Quiroz Serna <alejo.jko@gmail.com>
+Date:   Wed Apr 20 14:10:02 2016 -0500
+
+    Initial commit
