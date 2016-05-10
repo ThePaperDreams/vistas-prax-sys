@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
 		<link rel="stylesheet" href="../../recursos/css/select2.css">
 		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/sweetalert/sweetalert.css">
 		<!-- importar el código javascript -->
 		<script src="../../recursos/js/jquery.js"></script>	
 		<script src="../../recursos/js/bootstrap.js"></script>	
@@ -15,7 +16,8 @@
 		<script src="../../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
-		<script src="../../recursos/js/personalizados.js"></script>	
+		<script src="../../recursos/js/personalizados.js"></script>
+		<script src="../../recursos/plugins/sweetalert/sweetalert.min.js"></script>	
 
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -104,14 +106,14 @@
 			<div class="container-fluid">				
 				
 				<ol class="breadcrumb">
-					<li><a href="index.html">Inicio</a></li>
+					<li><a href="../../index.html">Inicio</a></li>
 					<li>Gestión de Categoría</li>
 				</ol>
 
 				<div class="col-lg-12  col-md-12  col-sm-12 ">
 					<!-- Todo el contenido -->				
 					<fieldset>
-						<legend>Categoria de Articulos</legend>
+						<legend>Gestión de Categoría</legend>
 						<div class="panel panel-default">							
 							<div class="panel-body">
 								<form class="form-inline" action="">
@@ -149,7 +151,7 @@
 									tempor</td>
 									<td class="text-right">
 										<a href="modificar.html"><button class="btn btn-success"><i class="fa fa-pencil"></i></button></a> 
-										<a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
+										<a href="#" onclick="js:eliminar();('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
 									</td>
 								</tr>
 								<tr>
@@ -159,7 +161,7 @@
 									tempor</td>
 									<td class="text-right">
 										<a href="modificar.html"><button class="btn btn-success"><i class="fa fa-pencil"></i></button></a> 
-										<a href="#" onclick="js:return confirm('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
+										<a href="#" onclick="js:eliminar();('¿Seguro que desea eliminar el registro?'); "><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a> 
 									</td>
 								</tr>
 								<tr>
@@ -268,6 +270,20 @@
 				});
 				jQuery(".date-picker").datepicker();
 			});
+			function eliminar(){
+				swal({   title: "¿Esta seguro?",
+					text: "No podrá recuperar el archivo que se elimine",   type: "warning",   showCancelButton: true,
+						confirmButtonColor: "#DD6B55", 
+						confirmButtonText: "Eliminar",   
+						cancelButtonText: "Cancelar",   
+						closeOnConfirm: false,   
+						closeOnCancel: false }, 
+						function(isConfirm){   
+							if (isConfirm) {     
+								swal("Eliminado.", "");   
+							} else {     swal("Cancelado", "El archivo no se ha eliminado", "error");   } });
+				return false;
+			}
 		</script>
 	</body>
 	</html>

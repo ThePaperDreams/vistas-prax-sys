@@ -1,5 +1,7 @@
 .navbar-brand img{
     width: 4.3%;
+    min-width: 60px;
+    max-width: 60px;
     position: absolute;
     left: 0.6%;
     top: 4px;
@@ -203,4 +205,25 @@ body{
 
 .form-filtro .form-group{
     margin-bottom: 4px;
+}
+
+@media (min-width: 500px){ 
+    .navbar-brand img {
+        width: 8.3%;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar-brand img{
+        width: 4.3%;
+        position: absolute;
+        left: 0.6%;
+        top: 4px;
+    }
+}
+
+@media (min-width: 1500px){ 
+    .navbar-brand img {
+        width: 3%;
+    }
 }

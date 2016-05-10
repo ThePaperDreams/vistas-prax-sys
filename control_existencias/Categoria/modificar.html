@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
 		<link rel="stylesheet" href="../../recursos/css/select2.css">
 		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/sweetalert/sweetalert.css">
 		<!-- importar el código javascript -->
 		<script src="../../recursos/js/jquery.js"></script>	
 		<script src="../../recursos/js/bootstrap.js"></script>	
@@ -17,6 +18,7 @@
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
 		<script src="../../recursos/js/personalizados.js"></script>
+		<script src="../../recursos/plugins/sweetalert/sweetalert.min.js"></script>	
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,7 +105,7 @@
 			<!-- Migas de pan -->
 			<div class="container-fluid">								
 				<ol class="breadcrumb">
-					<li><a href="#">Inicio</a></li>
+					<li><a href="../../index.html">Inicio</a></li>
 					<li><a href="index.html">Gestión de Categoría</a></li>
 					<li>Modificar Categoria de Articulo</li>
 				</ol>
@@ -112,7 +114,7 @@
 					<fieldset>
 						<legend>Modificar Categoria de Articulos</legend>						
 						<p class="text-danger">* Campos Requeridos</p>
-						<form action="">
+						<form action=" "onsubmit="return false";>
 							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8  col-md-8  col-sm-8">
 								<div class="form-group row">
 									<div class="col-lg-6  col-md-6  col-sm-6">
@@ -131,7 +133,7 @@
 								</div>
 								<div class="form-group row">
 									<div class=" col-lg-4  col-md-4  col-sm-4 ">
-										<button class="btn btn-success btn-block">
+										<button class="btn btn-success btn-block" onclick="guardar()">
 											<i class="fa fa-floppy-o"></i>
 											Guardar
 										</button>
@@ -143,7 +145,7 @@
 										</a>
 									</div>
 									<div class="text-right col-lg-4  col-md-4  col-sm-4">
-										<button class="btn btn-danger btn-block">
+										<button class="btn btn-danger btn-block" onclick="eliminar()">
 											<i class="fa fa-times-circle"></i>
 											Eliminar
 										</button>
@@ -164,6 +166,24 @@
 				});
 				jQuery(".date-picker").datepicker();
 			});
+			function guardar(){
+				swal("Guardado", "Registro exitoso", "success");
+				return this;
+			}	
+			function eliminar(){
+				swal({   title: "¿Esta seguro?",
+					text: "No podrá recuperar el archivo que se elimine",   type: "warning",   showCancelButton: true,
+						confirmButtonColor: "#DD6B55", 
+						confirmButtonText: "Eliminar",   
+						cancelButtonText: "Cancelar",   
+						closeOnConfirm: false,   
+						closeOnCancel: false }, 
+						function(isConfirm){   
+							if (isConfirm) {     
+								swal("Eliminado.", "");   
+							} else {     swal("Cancelado", "El archivo no se ha eliminado", "error");   } });
+				return false;
+			}
 		</script>
 	</body>
 	</html>

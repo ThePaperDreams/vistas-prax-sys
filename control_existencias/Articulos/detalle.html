@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../../recursos/css/personalizados.css">
 		<link rel="stylesheet" href="../../recursos/css/select2.css">
 		<link rel="stylesheet" href="../../recursos/plugins/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="../../recursos/plugins/sweetalert/sweetalert.css">
 		<!-- importar el código javascript -->
 		<script src="../../recursos/js/jquery.js"></script>	
 		<script src="../../recursos/js/bootstrap.js"></script>	
@@ -16,6 +17,7 @@
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>	
 		<script src="../../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
 		<script src="../../recursos/js/personalizados.js"></script>
+		<script src="../../recursos/plugins/sweetalert/sweetalert.min.js"></script>
 		<meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,7 +108,7 @@
 				<ol class="breadcrumb">
 					<li><a href="../../index.html">Inicio</a></li>
 					<li><a href="index.html">Gestión de Artículos</a></li>
-					<li>Ver Detalle </li>
+					<li>Ver Detalles Artículos </li>
 				</ol>
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<fieldset>
@@ -143,7 +145,7 @@
 							<div class="form-group row">
 								<div class="form-group row">
 									<div class="col-lg-4 col-md-4 col-sm-4">
-										<button class="btn btn-success btn-block">
+										<button class="btn btn-success btn-block "onclick="guardar()" >
 											<i class="fa fa-floppy-o"></i>
 											Guardar
 										</button>
@@ -177,6 +179,11 @@
 				});
 				jQuery(".date-picker").datepicker();
 			});
+			function guardar(){
+				swal("Guardado", "Registro exitoso", "success")
+				onclick: false;
+				onsubmit:false;
+			}
 		</script>
 	</body>
 	</html>
