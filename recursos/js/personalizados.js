@@ -23,8 +23,4 @@ jQuery(function(){
 	jQuery("aside .list-group .list-group-item ul a").click(function(e){
 		e.stopPropagation();		
 	});
-
-	$(function () {
-	  $('[data-toggle="tooltip"]').tooltip();
-	})
 });
