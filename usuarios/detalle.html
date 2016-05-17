@@ -1,191 +1,191 @@
-	<!DOCTYPE html>
-	<html lang="es">
-	<head>
-		<link rel="icon" href="../recursos/img/prax-sys/logo.png">
-		<title>Prax-sys Usuarios-Detalle</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="icon" href="../recursos/img/prax-sys/logo.png">
+	<title>Prax-sys Usuarios-Detalle</title>
 
-		<link rel="stylesheet" href="../recursos/css/bootstrap.css">
-		<link rel="stylesheet" href="../recursos/fa/css/font-awesome.css">
-		<link rel="stylesheet" href="../recursos/css/personalizados.css">
-		<link rel="stylesheet" href="../recursos/css/select2.css">
-		<link rel="stylesheet" href="../recursos/plugins/jquery-ui/jquery-ui.css">
-		<!-- importar el código javascript -->
-		<script src="../recursos/js/jquery.js"></script>	
-		<script src="../recursos/js/bootstrap.js"></script>	
-		<script src="../recursos/js/select2.js"></script>
-		<script src="../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
-		<script src="../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
-		<script src="../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
-		<script src="../recursos/js/personalizados.js"></script>
+	<link rel="stylesheet" href="../recursos/css/bootstrap.css">
+	<link rel="stylesheet" href="../recursos/fa/css/font-awesome.css">
+	<link rel="stylesheet" href="../recursos/css/personalizados.css">
+	<link rel="stylesheet" href="../recursos/css/select2.css">
+	<link rel="stylesheet" href="../recursos/plugins/jquery-ui/jquery-ui.css">
+	<!-- importar el código javascript -->
+	<script src="../recursos/js/jquery.js"></script>	
+	<script src="../recursos/js/bootstrap.js"></script>	
+	<script src="../recursos/js/select2.js"></script>
+	<script src="../recursos/plugins/jquery-ui/jquery-ui.js"></script>	
+	<script src="../recursos/plugins/bootstrapFileInput/js/fileinput.min.js"></script>
+	<script src="../recursos/plugins/bootstrapFileInput/js/fileinput_locale_es.js"></script>
+	<script src="../recursos/js/personalizados.js"></script>
 
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-	<body>
-		<header>
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">
-							<img src="../recursos/img/prax-sys/logo.png" alt="">
-							Club Deportivo Praxis
-						</a>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="../recursos/img/prax-sys/logo.png" alt="">
+						Club Deportivo Praxis
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+
+					</ul>
+					<!-- Menú de la derecha -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Ver perfil</a></li>			            
+								<li><a href="#">Cerrar sesión</a></li>
+							</ul>
+						</li>
+					</ul>	    
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>			
+	</header>
+	<aside class="col-lg-2  col-md-2  col-sm-2">
+		<div class="list-group">
+			<div class="list-group-item active"><i class="fa fa-user"></i> Usuarios
+				<ul>
+					<li><a href="index.html"><i class="fa fa-user"></i> Gestionar Usuarios</a></li>
+					<li><a href="roles/index.html"><i class="fa fa-users"></i> Gestionar Roles</a></li>
+				</ul>
+			</div>				
+			<div class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas 
+				<ul>
+					<li><a href="../deportistas/index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
+					<li><a href="../deportistas/acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
+					<li><a href="../deportistas/categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
+					<li><a href="../deportistas/prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
+					<li><a href="../deportistas/formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
+					<li><a href="../deportistas/torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
+				</ul>
+			</div>
+			<a href="../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i>Pagos</a>
+
+			<div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
+				<ul>
+					<li><a href="../control_existencias/Articulos/index.html">Artículos</a></li>
+					<li><a href="../control_existencias/Categoria/index.html">Categoría</a></li>
+					<li><a href="../control_existencias/Prestamo/index.html">Préstamo</a></li>
+				</ul>
+			</div>
+			<div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
+				<ul>
+					<li><a href="../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
+					<li><a href="../publicaciones/Eventos/index.html">Eventos</a></li>
+					<li><a href="../publicaciones/Tipo Eventos/index.html">Tipo de Eventos</a></li>
+				</ul>
+			</div>
+			<a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+		</div>
+	</aside>
+
+	<article class="col-lg-10 col-md-10 col-sm-10">
+		<!-- Migas de pan -->
+		<div class="container-fluid">				
+			
+			<ol class="breadcrumb">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="index.html">Gestionar Usuario</a></li>
+				<li>Detalles</li>
+			</ol>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<fieldset>
+					<legend>Detalles Usuario</legend>
+					<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
+						<img class="thumbnail profile-photo" alt="profile-user1" src="../recursos/img/usuarios/user1.jpg">
 					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-
-						</ul>
-						<!-- Menú de la derecha -->
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Ver perfil</a></li>			            
-									<li><a href="#">Cerrar sesión</a></li>
-								</ul>
-							</li>
-						</ul>	    
-
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>			
-		</header>
-		<aside class="col-lg-2  col-md-2  col-sm-2">
-			<div class="list-group">
-				<div class="list-group-item active"><i class="fa fa-user"></i> Usuarios
-					<ul>
-						<li><a href="index.html"><i class="fa fa-user"></i> Gestionar Usuarios</a></li>
-						<li><a href="roles/index.html"><i class="fa fa-users"></i> Gestionar Roles</a></li>
-					</ul>
-				</div>				
-				<div class="list-group-item sub-menu"><i class="fa fa-futbol-o"></i> Deportistas 
-					<ul>
-						<li><a href="../deportistas/index.html"><i class="fa fa-user-plus"></i> Gestionar Deportistas</a></li>
-						<li><a href="../deportistas/acudientes/index.html"><i class="fa fa-male"></i> Gestionar Acudientes</a></li>
-						<li><a href="../deportistas/categorias/index.html"><i class="fa fa-tags"></i> Gestionar Categorías</a></li>
-						<li><a href="../deportistas/prestamos/index.html"><i class="fa fa-exchange"></i> Préstamo de Deportistas</a></li>
-						<li><a href="../deportistas/formacion/index.html"><i class="fa fa-child"></i> Formación</a></li>
-						<li><a href="../deportistas/torneos/index.html"><i class="fa fa-trophy"></i> Torneos</a></li>
-					</ul>
-				</div>
-				<a href="../pagos/index.html" class="list-group-item"><i class="fa fa-credit-card"></i>Pagos</a>
-
-				<div class="list-group-item"><i class="fa fa-cubes"></i> Control de Existencias
-					<ul>
-						<li><a href="../control_existencias/Articulos/index.html">Artículos</a></li>
-						<li><a href="../control_existencias/Categoria/index.html">Categoría</a></li>
-						<li><a href="../control_existencias/Prestamo/index.html">Préstamo</a></li>
-					</ul>
-				</div>
-				<div class="list-group-item"><i class="fa fa-newspaper-o"></i> Publicaciones
-					<ul>
-						<li><a href="../publicaciones/Publicaciones/index.html">Publicaciones</a></li>
-						<li><a href="../publicaciones/Eventos/index.html">Eventos</a></li>
-						<li><a href="../publicaciones/Tipo Eventos/index.html">Tipo de Eventos</a></li>
-					</ul>
-				</div>
-				<a href="#" class="list-group-item"><i class="fa fa-cogs"></i> Configuraciones</a>
+					<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">							
+						<table class="table table-hover table-striped">
+							<tbody>
+								<tr>
+									<th>Nombres:</th>
+									<td>Jorge Alejandro</td>
+								</tr>
+								<tr>
+									<th>Apellidos:</th>
+									<td>Quiroz Serna</td>
+								</tr>
+								<tr>
+									<th>Tipo Documento:</th>
+									<td>Cédula de Ciudadanía</td>
+								</tr>
+								<tr>
+									<th>Documento:</th>
+									<td>123456</td>
+								</tr>
+								<tr>
+									<th>Rol:</th>
+									<td>Administrador</td>
+								</tr>
+								<tr>
+									<th>Correo electrónico:</th>
+									<td>Alejo.qs@misena.edu.co</td>
+								</tr>
+								<tr>
+									<th>Fecha:</th>
+									<td>00-00-0000</td>
+								</tr>
+								<tr>
+									<th>Teléfono:</th>
+									<td>123456</td>
+								</tr>
+								<tr>
+									<th>Celular:</th>
+									<td>3147218427</td>
+								</tr>
+								<tr>
+									<th>Dirección:</th>
+									<td>Cll 80 N° 86-81 2 Piso</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="form-group row">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<a href="index.html" class="btn btn-default">
+									<i class="fa fa-reply"></i> Volver
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+								<a href="modificar.html" class="btn btn-success">
+									<i class="fa fa-refresh"></i> Modificar
+								</a>
+							</div>
+						</div>	
+					</div>
+				</fieldset>
 			</div>
-		</aside>
-
-		<article class="col-lg-10 col-md-10 col-sm-10">
-			<!-- Migas de pan -->
-			<div class="container-fluid">				
-				
-				<ol class="breadcrumb">
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="index.html">Gestionar Usuario</a></li>
-					<li>Detalles</li>
-				</ol>
-				
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<fieldset>
-						<legend>Detalles Usuario</legend>
-						<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
-							<img class="thumbnail profile-photo" alt="profile-user1" src="../recursos/img/usuarios/user1.jpg">
-						</div>
-						<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">							
-							<table class="table table-hover table-striped">
-								<tbody>
-									<tr>
-										<th>Nombres:</th>
-										<td>Jorge Alejandro</td>
-									</tr>
-									<tr>
-										<th>Apellidos:</th>
-										<td>Quiroz Serna</td>
-									</tr>
-									<tr>
-										<th>Tipo Documento:</th>
-										<td>Cédula de Ciudadanía</td>
-									</tr>
-									<tr>
-										<th>Documento:</th>
-										<td>123456</td>
-									</tr>
-									<tr>
-										<th>Rol:</th>
-										<td>Administrador</td>
-									</tr>
-									<tr>
-										<th>Correo electrónico:</th>
-										<td>Alejo.qs@misena.edu.co</td>
-									</tr>
-									<tr>
-										<th>Fecha:</th>
-										<td>00-00-0000</td>
-									</tr>
-									<tr>
-										<th>Teléfono:</th>
-										<td>123456</td>
-									</tr>
-									<tr>
-										<th>Celular:</th>
-										<td>3147218427</td>
-									</tr>
-									<tr>
-										<th>Dirección:</th>
-										<td>Cll 80 N° 86-81 2 Piso</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="form-group row">
-								<div class="col-lg-6 col-md-6 col-sm-6">
-									<a href="index.html" class="btn btn-default">
-										<i class="fa fa-reply"></i> Volver
-									</a>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-									<a href="modificar.html" class="btn btn-success">
-										<i class="fa fa-refresh"></i> Modificar
-									</a>
-								</div>
-							</div>	
-						</div>
-					</fieldset>
-				</div>
-			</div>
-		</article>
-		<footer>			
-		</footer>
-		<script>
-			jQuery(function(){
-				jQuery(".select-two").select2({
-					width: "100%",
-				});
-				jQuery(".date-picker").datepicker();
+		</div>
+	</article>
+	<footer>			
+	</footer>
+	<script>
+		jQuery(function(){
+			jQuery(".select-two").select2({
+				width: "100%",
 			});
-		</script>
-	</body>
-	</html>
+			jQuery(".date-picker").datepicker();
+		});
+	</script>
+</body>
+</html>

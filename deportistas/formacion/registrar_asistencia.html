@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -121,39 +120,61 @@
 					<p class="text-danger">* Campos Requeridos</p>
 					<form action="">
 						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="form-group col-lg-6 col-md-6 col-sm-6">
+							<div class="form-group">
 								<div class="btn-group btn-group-justified" data-toggle="buttons">
-									<label class="btn btn-primary active">
-										<input type="radio" name="tipo" id="trainings" autocomplete="off" checked> Entrenamientos
+									<label class="btn btn-primary active" id="trainings">
+										<input type="radio" name="tipo" autocomplete="off" checked> Entrenamientos
 									</label>
-									<label class="btn btn-primary">
-										<input type="radio" name="tipo" id="teams" autocomplete="off"> Torneos
+									<label id="teams" class="btn btn-primary">
+										<input type="radio" name="tipo" autocomplete="off"> Torneos
 									</label>
 								</div>
 							</div>
-							<div class="form-group">
-								<select name="" id="" class="select-two form-group" hidden="">
-									<option value="">A1</option>
-									<option value="">A2</option>
-									<option value="">A3</option>
-									<option value="">A4</option>
-								</select>
-							</div>							
-							<div class="form-group">
-								<label for=""> Fecha</label>
-								<input class="form-control date-picker" type="text" placeholder="Fecha">
+							<div class="row">
+								<div id="categorias" class="form-group col-lg-6 col-md-6 col-sm-6">
+									<label><span class="text-danger">*</span> Categoría</label>
+									<select name="" id="" class="select-two form-group" hidden="">
+										<option value="">A1</option>
+										<option value="">A2</option>
+										<option value="">A3</option>
+										<option value="">A4</option>
+									</select>
+								</div>	
+
+								<div id="torneos" class="form-group col-lg-6 col-md-6 col-sm-6" style="display: none;">
+									<label><span class="text-danger">*</span> Torneo</label>
+									<select name="" id="" class="select-two form-group" hidden="">
+										<option value="">Torneo 1</option>
+										<option value="">Torneo 2</option>
+										<option value="">Torneo 3</option>
+										<option value="">Torneo 4</option>
+									</select>
+								</div>							
+								<div class="form-group col-lg-6 col-md-6 col-sm-6">
+									<label><span class="text-danger">*</span> Fecha</label>
+									<input class="form-control date-picker" type="text" placeholder="Fecha">
+								</div>
+							</div>
+							<div class="row">
+								<div id="equipos" class="col-sm-4" style="display: none">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Equipo 1</a></li>
+										<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Equipo 2</a></li>
+										<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Equipo 3</a></li>
+									</ul>
+								</div>
 							</div>
 							<table class="table table-hover table-striped">
 								<thead>
 									<tr>
 										<th class="col-sm-9">Deportista</th>
-										<th class="col-sm-3 text-center">Asistió</th>
+										<th class="col-sm-3 text-right">Asistió</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>Deportista 1</td>
-										<td class="text-center">
+										<td class="text-right">
 											<div class="btn-group" data-toggle="buttons">
 												<label class="btn btn-default active">
 													<input type="radio" name="options" id="option1" autocomplete="off" checked> Si
@@ -166,7 +187,7 @@
 									</tr>
 									<tr>
 										<td>Deportista 2</td>
-										<td class="text-center">
+										<td class="text-right">
 											<div class="btn-group" data-toggle="buttons">
 												<label class="btn btn-default active">
 													<input type="radio" name="options" id="option1" autocomplete="off" checked> Si
@@ -179,7 +200,7 @@
 									</tr>
 									<tr>
 										<td>Deportista 3</td>
-										<td class="text-center">
+										<td class="text-right">
 											<div class="btn-group" data-toggle="buttons">
 												<label class="btn btn-default active">
 													<input type="radio" name="options" id="option1" autocomplete="off" checked> Si
@@ -192,7 +213,7 @@
 									</tr>
 									<tr>
 										<td>Deportista 4</td>
-										<td class="text-center">
+										<td class="text-right">
 											<div class="btn-group" data-toggle="buttons">
 												<label class="btn btn-default active">
 													<input type="radio" name="options" id="option1" autocomplete="off" checked> Si
@@ -204,8 +225,7 @@
 										</td>
 									</tr>
 								</tbody>
-							</table>					
-
+							</table>	
 							<div class="form-group row">
 								<div class="col-sm-offset-2 col-sm-4">
 									<button class="btn btn-success btn-block">
@@ -238,7 +258,20 @@
 			jQuery(".select-two").select2({
 				width: "100%",
 			});
+
 			jQuery(".date-picker").datepicker();
+
+			jQuery("#teams").click(function(){
+				$("#categorias").hide();
+				$("#torneos").show();
+				$("#equipos").show();
+			});
+
+			jQuery("#trainings").click(function(){
+				$("#categorias").show();
+				$("#torneos").hide();
+				$("#equipos").hide();
+			});
 		});
 	</script>
 </body>
